@@ -14,28 +14,78 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId : '172708956215256',
+				channelUrl: 'https://contrib.andrew.cmu.edu/~jnakayama/',
+				status: true,
+				cookie: true,
+				xfbml: true
+			});
+			FB.getLoginStatus(function(response) {
+				if (response.status === 'connected') {
+    				// connected
+ 				} else if (response.status === 'not_authorized') {
+    				login();
+  				} else {
+    				login();
+  				}
+			});
+		};
+
+		(function(d) {
+			var js, id = 'facebook-jssdk', ref=d.getElementsByTagName('script')[0];
+			if (d.getElementById(id)) {return;}
+    		js = d.createElement('script'); js.id = id; js.async = true;
+     		js.src = "//connect.facebook.net/en_US/all.js";
+    		ref.parentNode.insertBefore(js, ref);
+   		}(document));
+	</script>
+
+	<script src="//connect.facebook.net/en_US/all.js"></script>
+
 	<div class="page-wrapper">
 		<div id="nav-bar-wrapper">
 			<div id="logo"></div>
+<!-- NOT ON LOGIN/SIGNUP PAGE
 			<div id="settings"></div>
 			<div id="create-trip"></div>
 			<div id="home"></div>
-			<div id="logout"></div>
+			<div id="logout"></div> -->
 		</div>
 		
 		<div id="content-wrapper">
 			
-			<div id="join">Join Now!
-				<div id="subtitle">start planning your trip today!</div>
-			</div>
-			<div id="login-box">
-				<form id="login-form">
-					<!-- <input email> -->
-					<!-- <input password> -->
-					<div id="fb-icon"></div> 
-					<div id="arrow"></div> <!-- submit -->
-				</form>
+			<div id="join">Social Traveler
+				<div id="subtitle">an online platform for trip collaboration</div>
+			</div>	
+			<div id="signup">
+				<script>
+					function login() {
+						FB.login(function(response) {
+							if (rsponse.authResponse) {
+								testAPI();
+							} else {
+								//cancelled
+							}
+						});
+					}
+
+					function testAPI() {
+						console.log('Welcome! Fetching your info...');
+						FB.api('/me', function(response) {
+							console.log('Good to see you, ' + response.name);
+						});
+					}
+				</script>
+				<!--FB SIGN UP-->
 			<div>
+
+			<div id="login">
+				<!--FB LOGIN-->
+			</div>	
 			
 		</div>	
 	</div>

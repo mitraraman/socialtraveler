@@ -1,0 +1,6 @@
+<?php
+	$app_id = "172708956215256";
+	$app_secret = "17de81e1e2f9e9a4ba0893fcda63b6b3";
+	$my_url = "https://contrib.andrew.cmu.edu/~jnakayama/";
+
+?>
