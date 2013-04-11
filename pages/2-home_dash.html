@@ -2,43 +2,153 @@
 <html>
 <head>
 	<title>Social Traveler</title>
+	<meta charset="utf-8">
 	<link rel="shortcut icon" href="../images/favicon.ico" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Social Traveler - an online platform for trip collaboration">
+
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 	
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>	
-	
-	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	
-	<script src="../js/script.js"></script>
-	<script src="../js/jquery-1.9.0.js"></script>	
-</head>`
+</head>
+
 
 <body>
+	<!-- Navbar
+    ================================================== -->
+ <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+	   <div id="logo"></div>
+
+       <div class="nav-collapse collapse" id="main-menu">
+        <ul class="nav" id="main-menu-left">
+        </ul>
+
+        <ul class="nav pull-right" id="main-menu-right">
+			<li><div id="user" class="word-icons">Hello, Folashade!</div></li>
+			<li><div id="settings"></div></li>
+			<li><div id="create-trip"></div></li>
+			<li><div id="logout" class="word-icons">logout</div></li>
+        </ul>
+
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+ <!-- Content
+   ================================================== -->
+
 	<div class="page-wrapper">
-		<div id="nav-bar-wrapper">
-			<div id="logo"></div>
-			<div id="settings"></div>
-			<div id="create-trip"></div>
-			<div id="home"></div>
-			<div id="logout"></div>
-		</div>
+		<div class="container-fluid">
+		  <div class="row-fluid">
+
+		    <div class="span9" id="home-dash">
+				<div class="inner-content">
+					<h1>HOME</h1>
+					<h2>TRAVELER PROFILE</h2>
+					
+					<div id="pic"></div>
+					<div id="name">Folashade Okunubi</div>
+					
+					<!-- <row> -->
+					<div class="row-fluid">
+					  <div class="span2">
+						<h3>MODE</h3>
+						<div class="mode">Plane</div>
+					  </div>
+					
+			          <div class="span6">
+						<h3>TRAVELER TIMELINE</h3>
+						<div class="trip-dash-details">
+							Spring Break  -- 3/12 - 3/20  -- PIT to MIA
+						</div>
+					  </div>
+					
+			          <div class="span4">
+						<h3>ATTENDING</h3>
+						<div class="attendee"></div>
+						<div class="attendee"></div>
+				      </div>
+			        </div>
+
+
+					<!-- <row> -->
+						<br>
+					<div class="row-fluid">
+					  <div class="span2">
+						<div class="mode">Plane</div>
+					  </div>
+					
+			          <div class="span6">
+						<div class="trip-dash-details">
+							Spring Break  -- 3/12 - 3/20  -- PIT to MIA
+						</div>
+					  </div>
+					
+			          <div class="span4">
+						<div class="attendee"></div>
+						<div class="attendee"></div>
+				      </div>
+			        </div>
+						
+			
+					
+				</div>
+		    </div>
 		
-		<div id="content-wrapper">
-			<div id="info">
-				<div id="picture"></div>
-			</div>
-			
-			<div id="timeline">
-			</div>
-			
-			<div id="sidebar">
-			</div>
-			
-			<div id="chat">
-			</div>
-			
-		</div>	
+		    <div class="span3" id="notif">
+				<div class="inner-content">
+					<h1>NOTIFICATIONS</h1>
+				</div>		      
+		 
+		    </div>
+		
+		  </div>
+		</div>
 	</div>
+	
+    <!-- javascript
+    ================================================== -->
+	<script src="../js/jquery-1.9.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/script.js"></script>
+
+
+
+
 </body>
 
+
+
 </html>
+
+
+
+
+
+
+<!-- <div id="content-wrapper">
+	<div id="info">
+		<div id="picture"></div>
+	</div>
+	
+	<div id="timeline">
+	</div>
+	
+	<div id="sidebar">
+	</div>
+	
+	<div id="chat">
+	</div>
+	
+</div> -->

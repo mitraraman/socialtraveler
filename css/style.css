@@ -1,3 +1,5 @@
+/* Font Variables
+*******************************************************************************/
 @font-face {
 font-family: ArcherPro-Hairline;
 src: url(../fonts/Archer/ArcherPro-Hairline.otf) format("opentype");
@@ -9,10 +11,37 @@ src: url(../fonts/Archer/ArcherPro-Light.otf) format("opentype");
 }
 
 @font-face {
+font-family: ArcherPro-Bold;
+src: url(../fonts/Archer/ArcherPro-Bold.otf) format("opentype");
+}
+
+@font-face {
+font-family: ArcherPro-Medium;
+src: url(../fonts/Archer/ArcherPro-Medium.otf) format("opentype");
+}
+
+@font-face {
 font-family: UniversLTStd-ThinUltraCn;
 src: url(../fonts/Univers/UniversLTStd-ThinUltraCn.otf) format("opentype");
 }
 
+#Colors {
+	maroon: #c54232;
+	taupe: #c5b69b;
+	cream: #fef6dd;
+}
+
+/* Reset
+*******************************************************************************/
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
 
 /* Main Styles
@@ -25,19 +54,48 @@ body {
 	background: url(../img/bg.gif);
 }
 
-/*#page-wrapper {
+
+.container-fluid {
+	width: 85%; 
 	margin: 0 auto;
 }
 
-#nav-bar-wrapper {
-	height: 20px;
-	color: blue;
-}*/
+.page-wrapper {
+	margin-top:190px;
+	text-align:center;
+}
+
+#logo {
+	width: 200px;
+	height: 200px;
+	background: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	z-index:7000;
+	position: fixed;
+	top:0;
+}
+
+h1 {
+	font-family: ArcherPro-Medium;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+h2 {
+	font-family: ArcherPro-Medium;
+	font-size: 20px;	
+}
+
+h3 {
+	font-family: ArcherPro-Bold;
+	font-size: 16px;	
+}
 
 
 
-
-/* Login/Signup Page
+/* Navigation
 *******************************************************************************/
 .navbar-fixed-top {
 	background-color: blue;
@@ -65,28 +123,66 @@ body {
 	padding: 10px;
 	z-index:200;
 	
-	}
-
-#page-wrapper {
-	margin-top:150px;
-	text-align:center;
 }
 
-#logo {
-	width: 200px;
-	height: 200px;
-	background: url(../img/logo.gif);
-	background-repeat: no-repeat;
-	z-index:7000;
-	position: fixed;
-	top:0;
-}
+
 
 .nav {
 	height:50px;
 	
 }
 
+
+/* Nav Icons
+*******************************************************************************/
+.word-icons {
+	margin: 5px;
+	margin-top: 10px;
+}
+
+#user {
+	color: #fff;
+	padding-right: 5px;
+	border-right: 1px solid white;
+}
+
+#logout {
+	margin-right: 50px;	
+	color: #c5b69b;
+	padding-left: 5px;
+	
+}
+
+.pic-icons {
+	margin: 5px;
+	margin-top: 10px;
+}
+
+#settings {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	background: url(../img/settings.png);
+	background-position:center; 	
+}
+
+#create-trip {
+	width: 30px;
+	height: 30px;
+/*	background-color: #fff;*/
+	margin: 5px;
+	background: url(../img/plus.png);
+	background-position:center; 
+	background-size: 41px;	
+	margin-top: 7px;
+	
+}
+
+
+
+
+/* Login/Signup Page
+*******************************************************************************/
 #join {
 	margin-top:350px;
 	font-family: UniversLTStd-ThinUltraCn;
@@ -133,4 +229,77 @@ body {
 
 .front-pg-buttons:active {
 	background-color: #b9aa8e;
+}
+
+
+/* 2- Home/Dashboard
+*******************************************************************************/
+#home-dash {
+	height: 600px;
+	padding: 20px;	
+	position:relative;
+	background-color: #c54232;
+	text-align: center;
+}
+
+#notif {
+	height: 600px;
+	padding: 20px;	
+	position:relative;
+	background-color: #c54232;
+}
+
+.inner-content {
+/*	position:absolute;*/
+	background-color: #fef6dd;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#pic {
+	background: url(../img/fb-profilepic.jpg);
+	width: 150px;
+	height: 100px;
+	background-position:center; 
+	background-size: 150px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+#name {
+	margin-bottom: 20px;
+}
+
+.attendee {
+	background: url(../img/fb-profilepic.jpg);
+	width: 80px;
+	height: 70px;
+	background-position:center; 
+	background-size: 100px;
+	display: inline-block;
+/*	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;*/	
+}
+
+.trip-dash-details {
+/*	height: 30px;*/
+	width: 90%;
+	background-color: #c5b69b;
+	margin: 0 auto;
+	padding: 10px;
+	margin-top:20px;
+}
+
+.mode {
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+	background-color: #c5b69b;
+	border: 3px solid #c54232;
+	border-radius: 60px;
+	vertical-align: baseline;
+	line-height: 80px;
 }
