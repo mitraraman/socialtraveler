@@ -65,16 +65,6 @@ body {
 	text-align:center;
 }
 
-#logo {
-	width: 200px;
-	height: 200px;
-	background: url(../img/logo.gif);
-	background-repeat: no-repeat;
-	z-index:7000;
-	position: fixed;
-	top:0;
-}
-
 h1 {
 	font-family: ArcherPro-Medium;
 	font-size: 30px;
@@ -97,86 +87,114 @@ h3 {
 
 /* Navigation
 *******************************************************************************/
-.navbar-fixed-top {
+/*.navbar-fixed-top {
 	background-color: blue;
 	z-index:200;
-	
-	
-	
+}*/
+
+#logo {
+	width: 15em;
+	height: 15em;
+	background: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	z-index:7000;
+	top:0;
+	margin-top: -3em;
+	margin-left: 2em;
 }
+
 .navbar {
-/*	height: 50px;*/
-	margin-top: 50px;
-/*	background-color: #c54232;	*/
+	margin-top: -10em;
 	z-index:200;
-	border-top: 8px solid #c5b69b;
-	
-}
-
-
-.navbar-inner .container {
-	margin-left: 0px;
-	margin-right: 0px;
-		width:100%;
-/*	background-color: #c54232;*/
+	width: 100%;
 	background: url(../img/txtr.gif);
-	padding: 10px;
-	z-index:200;
-	
+	height: 5.8em;
+	border-top: 0.5em solid #c5b69b;
+	position: absolute;
+	left: 0;
 }
 
-
-
-.nav {
-	height:50px;
-	
+ul#main-menu-right{
+	list-style-type: none;
+	position: absolute;
+	margin-top: -12em;
+	right: 0;
 }
 
+#main-menu-right li{
+	display: inline-block;
+	margin: 0.5em;
+	font-size: 1.7em;
+	font-style: italic;
+	font-weight: lighter;
+	color: #fff;
+	height: 1em;
+	text-align: center;
+	border-right: 0.1em solid #fff;
+}
 
 /* Nav Icons
 *******************************************************************************/
-.word-icons {
-	margin: 5px;
-	margin-top: 10px;
+
+#settings{
+	width: 1em;
+	background: url(../img/settings.png);
+	background-position:center;	
+	padding-right: 0.5em;
 }
 
-#user {
+#create-trip{
+	width: 1em;
+	background: url(../img/plus.png);
+	background-position:center; 
+	background-size: 42px;
+	padding-right: 0.5em;
+}
+
+#user{
+	padding-right: 0.5em;
+}
+
+#logout{
+	border-right: none;
+}
+
+/*#user {
 	color: #fff;
-	padding-right: 5px;
-	border-right: 1px solid white;
+	padding-right: 0.5em;
+	border-right: 0.1em solid white;
+	font-style: italic;
+	font-size: 1.7em;
+	font-weight: lighter;
 }
 
 #logout {
 	margin-right: 50px;	
-	color: #c5b69b;
+	color: #fff;
 	padding-left: 5px;
-	
 }
 
-.pic-icons {
-	margin: 5px;
-	margin-top: 10px;
+.pic-icon {
+	margin: 0.5em;
+	margin-top: 2em;
 }
 
 #settings {
 	width: 30px;
 	height: 30px;
-	margin: 5px;
 	background: url(../img/settings.png);
-	background-position:center; 	
+	background-position:center;
+	border-right: 0.1em solid white; 	
 }
 
 #create-trip {
 	width: 30px;
 	height: 30px;
-/*	background-color: #fff;*/
-	margin: 5px;
 	background: url(../img/plus.png);
 	background-position:center; 
 	background-size: 41px;	
-	margin-top: 7px;
-	
-}
+	border-right: 0.1em solid white;
+}*/
 
 
 
@@ -235,26 +253,34 @@ h3 {
 /* 2- Home/Dashboard
 *******************************************************************************/
 #home-dash {
-	height: 600px;
-	padding: 20px;	
+	margin-top: 2em;
+	height: 55em;
+	padding: 2em;	
 	position:relative;
 	background-color: #c54232;
 	text-align: center;
+
 }
 
 #notif {
-	height: 600px;
-	padding: 20px;	
+	height: 55em;
+	padding: 0;	
 	position:relative;
 	background-color: #c54232;
 }
 
 .inner-content {
-/*	position:absolute;*/
-	background-color: #fef6dd;
+	border: 0.3em solid #fef6dd;
+	background-color: #c54232;
 	height: 100%;
-	width: 100%;
+	width: 92%;
 	margin: 0 auto;
+	padding: 2em;
+	color: #fef6dd;
+}
+
+.inner-content h1{
+	margin-bottom: 0.3em;
 }
 
 #pic {
