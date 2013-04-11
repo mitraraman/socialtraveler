@@ -1,22 +1,99 @@
+@font-face {
+font-family: ArcherPro-Hairline;
+src: url(../fonts/ArcherPro-Hairline.otf) format("opentype");
+}
+
+@font-face {
+font-family: UniversLTStd-ThinUltraCn;
+src: url(../fonts/Univers/UniversLTStd-ThinUltraCn.otf) format("opentype");
+}
+
+
+
 /* Main Styles
 *******************************************************************************/
 html {	
 }
 
 body {
+	background-color: #fef6dd;	
+	background: url(../img/bg.gif);
 }
 
-#page-wrapper {
+/*#page-wrapper {
 	margin: 0 auto;
 }
 
 #nav-bar-wrapper {
 	height: 20px;
 	color: blue;
-}
+}*/
 
 
 
 
 /* Login/Signup Page
 *******************************************************************************/
+.navbar-fixed-top {
+	background-color: blue;
+	z-index:200;
+	
+	
+}
+.navbar {
+/*	height: 50px;*/
+	margin-top: 50px;
+/*	background-color: #c54232;	*/
+	z-index:200;
+	
+}
+
+
+.navbar-inner .container {
+	margin-left: 0px;
+	margin-right: 0px;
+		width:100%;
+/*	background-color: #c54232;*/
+	background: url(../img/txtr.gif);
+	padding: 10px;
+	z-index:200;
+	
+	}
+
+#page-wrapper {
+	margin-top:150px;
+	text-align:center;
+}
+
+#logo {
+	width: 200px;
+	height: 200px;
+	background: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	z-index:7000;
+	position: fixed;
+	top:0;
+}
+
+.nav {
+	height:50px;
+}
+
+#join {
+	margin-top:400px;
+	font-family: UniversLTStd-ThinUltraCn;
+	font-size: 180px;
+	position:relative;
+	color: #c5b69b;
+	margin-left: 0;
+	margin-right: 0;
+	
+}
+
+#subtitle {
+	font-size:20px;
+	position: relative;
+	top: 40px;
+	color: #b9aa8e;
+	font-family: 'Oleo Script', cursive;
+}
