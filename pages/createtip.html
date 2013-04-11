@@ -45,35 +45,24 @@
  <!-- Content
    ================================================== -->
 
-	<div class="page-wrapper settings">
-		<div id="settingswrap">
-		<div id="top_settings">
-				<h1>Settings</h1>
-				<img id="profpic" src="../img/fb-profilepic.jpg" />
-				<h6 id="name">YOUR NAME HERE</h6>
-				<button type="button" id="upload_prof">&#43;Upload Profile Picture</button>
-			</div>
-
-			<div id="middle_settings">
-				<img id="fb_logo" src="" />
-				<h2>FACEBOOK SETTINGS</h2>
-				<h6>Change your current password.</h6>
+	<div class="page-wrapper create">
+		<div id="createwrap">
+				<h1>CREATE A TRIP</h1>
+				<ul id="method">
+					<li class="circle">bus</li>
+					<li class="circle">plane</li>
+					<li class="circle">car</li>
+					<li class="circle">train</li>
+				</ul>
 				<form>
-					Current Password: <input type="password" name="currentpass"><br>
-					New Password: <input type="password" name="newpass">
-				</form>
-			</div>
+					TRIP NAME<input type="text" name="tripname"><br>
+					DATE<input type="text" name="datestart"><input type="text" name="dateend"><br>
+					DESTINATION<input type="text" name="dest"><br>
+					INVITE FRIENDS
+				</form><br>
 
-			<div id="bottom_settings">
-				<h3>Timeline Filter</h3>
-				<h6>Change the way you view your trips!</h6>
-				<button type="button" class="settings_button" id="button_time">Time</button>
-				<button type="button" class="settings_button" id="button_category">Category</button>
-				<button type="button" class="settings_button" id="button_name">Trip Name</button>
-				<button type="button" class="settings_button" id="button_location">Location</button>
-			</div>
-			<br>
-			<button type="button" id="save_settings">Save Settings</button> 
+			<button type="submit" id="submitTrip">Submit</button>
+			<button type="button" id="cancelTrip">Cancel</button> 
 		</div>
 	</div>
 	
