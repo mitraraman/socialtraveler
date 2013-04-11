@@ -330,7 +330,7 @@ ul#main-menu-right{
 	line-height: 80px;
 }
 
-/* 2- Settings
+/*Settings
 *******************************************************************************/
 .settings_button{
 	display:block;
@@ -338,7 +338,135 @@ ul#main-menu-right{
 	margin-top:5px;
 	margin-bottom: 5px;
 }
+.settings{
+	background-color: #c54232;
+	color: #fef6dd;
+	width: 80%;
+	margin: auto;
+	margin-top: 190px;
+	margin-bottom: 200px;
+	border: 10px solid #c54232;
+}
+#settingswrap{
+	padding-top:20px;
+	border: 2px solid #fef6dd;
+
+}
+#save_settings{
+	margin-bottom:100px;
+}
+
+/*Create a trip
+*******************************************************************************/
+.create{
+	background-color: #c54232;
+	color: #fef6dd;
+	width: 80%;
+	margin: auto;
+	margin-top: 190px;
+	border: 10px solid #c54232;
+}
+#createwrap{
+	padding-top:20px;
+	border: 2px solid #fef6dd;
+	padding-bottom: 150px;
+
+}
+#createwrap *{
+	margin: 10px;
+}
+
+#method li{
+	display: inline-block;
+	vertical-align: center;
+	margin-right: 10px;
+
+}
+.circle { 
+   width: 60px;
+   height: 60px;
+   background: #fef6dd;
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   color:#c54232;
+   border:2px solid #fef6dd;;
+}
+.circle:hover{
+	background-color: #c54232;
+	color: #fef6dd;;
+}
 
 
+/*Dashboard
+*******************************************************************************/
 
+.dashboard{
+	background-color: #c54232;
+	width:80%;
+	margin:auto;
+	margin-top: 190px;
 
+}
+#filter_categories li, #categories_input li{
+	display:inline;
+}
+#trip_header{
+	color: #fef6dd;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #fef6dd;
+}
+#trip_header div{
+	display:inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#trip_logistics div{
+	display:block;
+}
+#attending{
+	text-align: left;
+}
+
+#trip_categories{
+	margin-top: 3px;
+	border-top: 3px solid #fef6dd;
+	color: #fef6dd;
+	text-align: left;
+}
+#trip_categories *{
+	text-align: left;
+	padding-left: 15px;
+}
+#trip_categories h3{
+	padding-top: 15px;
+}
+#trip_categories h6{
+	display:inline;
+	font-size:15%;
+	font-style: italic;
+}
+#trip_categories #filter_categories{
+	display:inline;
+}
+#trip_notes{
+
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+#trip_input{
+		border-top: 3px solid #fef6dd;
+	margin-top: 15px;
+	text-align: left;
+
+	height:auto;
+}
+#categories_input{
+	display: inline-block;
+}
+textarea{
+	display: inline-block;
+	color: #fef6dd;
+}
