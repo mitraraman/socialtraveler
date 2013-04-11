@@ -1,6 +1,11 @@
 @font-face {
 font-family: ArcherPro-Hairline;
-src: url(../fonts/ArcherPro-Hairline.otf) format("opentype");
+src: url(../fonts/Archer/ArcherPro-Hairline.otf) format("opentype");
+}
+
+@font-face {
+font-family: ArcherPro-Light;
+src: url(../fonts/Archer/ArcherPro-Light.otf) format("opentype");
 }
 
 @font-face {
@@ -39,12 +44,14 @@ body {
 	z-index:200;
 	
 	
+	
 }
 .navbar {
 /*	height: 50px;*/
 	margin-top: 50px;
 /*	background-color: #c54232;	*/
 	z-index:200;
+	border-top: 8px solid #c5b69b;
 	
 }
 
@@ -77,12 +84,13 @@ body {
 
 .nav {
 	height:50px;
+	
 }
 
 #join {
-	margin-top:400px;
+	margin-top:350px;
 	font-family: UniversLTStd-ThinUltraCn;
-	font-size: 180px;
+	font-size: 170px;
 	position:relative;
 	color: #c5b69b;
 	margin-left: 0;
@@ -96,4 +104,33 @@ body {
 	top: 40px;
 	color: #b9aa8e;
 	font-family: 'Oleo Script', cursive;
+}
+
+.button-wrap {
+	padding:5px;
+	background-color: #c54232;
+	margin:0 auto;
+	width: 220px;
+	margin-bottom: 10px;
+	font-family: ArcherPro-Light;
+	color:white;
+}
+
+.front-pg-buttons {
+/*	width:200px;*/
+/*	height:20px;*/
+	background-color: #c54232;
+	border: 2px solid #fef6dd;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.front-pg-buttons:hover {
+	background-color: #fef6dd;
+	border: 2px solid #fef6dd;
+	color: #c54232;
+}
+
+.front-pg-buttons:active {
+	background-color: #b9aa8e;
 }
