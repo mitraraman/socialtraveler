@@ -303,3 +303,16 @@ h3 {
 	vertical-align: baseline;
 	line-height: 80px;
 }
+
+/* 2- Settings
+*******************************************************************************/
+.settings_button{
+	display:block;
+	margin:auto;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+
+
+
