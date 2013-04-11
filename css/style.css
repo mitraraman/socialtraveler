@@ -303,3 +303,48 @@ h3 {
 	vertical-align: baseline;
 	line-height: 80px;
 }
+
+
+
+/* Settings
+*******************************************************************************/
+
+#upload_prof {
+	background-color: #c5b69b;
+	color: #fff;
+}
+
+#middle_settings {
+	text-align:center;
+	margin-top: 20px;
+}
+
+#bottom_settings {
+	margin-top: 20px;
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+.settings {
+	background-color: #fff;
+	border-radius: 20px;	
+	display:block;
+	width: 230px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+#settings-page {
+	min-height: 600px;
+	padding: 20px;	
+	position:relative;
+	background-color: #c54232;
+	text-align: center;
+}
+
+#save_settings{
+	background-color: #c54232;
+	color: #fef6dd;
+	border-radius: 5px;	
+	
+}

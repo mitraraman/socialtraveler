@@ -22,10 +22,10 @@ _copy from homework assignments_
 + File naming: #-the_name.html   
   - ex:1-login_signup.html
 + Just Copy and Paste from the template to start working on your own page
-+ signup/login - fo
-+ home/timelines - fo
-+ create trip/trip edit - mitra
-+ trip summary - mitra
-+ trip dashboard - junki
-+ settings -junki
-+ invite friends - mitra
+1. signup/login - fo
+2. home/dashboard - fo
+3. create trip/trip edit - mitra
+4. trip summary - mitra
+5. trip dashboard - junki
+6. settings -junki
+7. invite friends - mitra
