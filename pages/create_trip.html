@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social Traveler</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../images/favicon.ico" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Social Traveler - an online platform for trip collaboration">
+
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	
+</head>
+
+
+<body>
+	<!-- Navbar
+    ================================================== -->
+ <div class="navbar">
+ 	<div id="logo"></div>
+
+ 	<ul id="main-menu-right">
+ 		<li id="user">Hello, User!</li>
+ 		<li id="settings" class="pic-icon"></li>
+ 		<li id="create-trip" class="pic-icon"></li>
+ 		<li id="logout">logout</li>
+ 	</ul>
+ </div>
+
+<!-- Content
+   ================================================== -->
+
+	<div class="page-wrapper">
+		<div class="container-fluid">
+		  <div class="row-fluid">
+
+		    <div class="span9" id="create-trip">
+				<div class="inner-content">
+					<h1>CREATE A TRIP</h1>
+					<br /><br />
+					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
+						<input type="radio" name="transportation" class="trans-mode" value="plane">Plane
+						<input type="radio" name="transportation" class="trans-mode" value="bus">Bus
+						<input type="radio" name="transportation" class="trans-mode" value="car">Car
+						<input type="radio" name="transportation" class="trans-mode" value="train">train
+
+						<h3>TRIP NAME</h3><br />
+						<input type="text" value="trip-name" name="trip-name" class="trip-input">
+
+						<h3>DATE</h3><br />
+						<input type="date" name="start-date" value="start-date" class="trip-input">
+						<input type="date" name="end-date" value="end-date" class="trip-input" >
+
+						<h3>DESTINATION</h3><br />
+						<input type="text" name="end-dest" value="end-dest" class="trip-input">
+
+						<h3>INVITE FRIENDS</h3><br />
+						<!--invite friends box from FB-->
+
+						<input type="submit" value="Create Your Trip!">
+
+					</form>
+
+					<!-- <row> -->
+<!-- 					<div class="row-fluid">
+					  <div class="span2">
+					  	<ul id="transportation-list">
+					  		<li class="mode">Plane</li>
+					  		<li class="mode">Car</li>
+					  		<li class="mode">Train</li>
+					  		<li class="mode">Bus</li>
+					  	</ul>
+					  </div>
+					
+			          <div class="span6">
+						<h3>TRIP NAME</h3>
+						<input type="text" value="trip-name" placeholder="ex. Spring Break" />
+					  </div>
+					
+			          <div class="span4">
+						<h3>DATE</h3>
+						<input type="text" value="start-date" name="start-date"/>
+						<input type="text" value="end-date" name="end-date" />
+				      </div>
+			        </div>
+ -->
+
+					<!-- <row> -->
+<!-- 						<br>
+					<div class="row-fluid">
+					  <div class="span2">
+						<div class="mode">Plane</div>
+					  </div>
+					
+			          <div class="span6">
+						<div class="trip-dash-details">
+							Spring Break  -- 3/12 - 3/20  -- PIT to MIA
+						</div>
+					  </div>
+					
+			          <div class="span4">
+						<div class="attendee"></div>
+						<div class="attendee"></div>
+				      </div>
+			        </div> -->
+						
+			
+					
+				</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+    <!-- javascript
+    ================================================== -->
+	<script src="../js/jquery-1.9.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/script.js"></script>
+</body>	
+ </html>
