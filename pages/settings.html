@@ -19,25 +19,15 @@
 <body>
 	<!-- Navbar
     ================================================== -->
- <div class="navbar navbar-fixed-top">
-   <div class="navbar-inner">
-     <div class="container">
-	   <div id="logo"></div>
+ <div class="navbar">
+ 	<div id="logo"></div>
 
-       <div class="nav-collapse collapse" id="main-menu">
-        <ul class="nav" id="main-menu-left">
-        </ul>
-
-        <ul class="nav pull-right" id="main-menu-right">
-			<li><div id="user" class="word-icons">Hello, Folashade!</div></li>
-			<li><div id="settings"></div></li>
-			<li><div id="create-trip"></div></li>
-			<li><div id="logout" class="word-icons">logout</div></li>
-        </ul>
-
-       </div>
-     </div>
-   </div>
+ 	<ul id="main-menu-right">
+ 		<li id="user">Hello, User!</li>
+ 		<li id="settings" class="pic-icon"></li>
+ 		<li id="create-trip" class="pic-icon"></li>
+ 		<li id="logout">logout</li>
+ 	</ul>
  </div>
 
 
@@ -45,7 +35,7 @@
  <!-- Content
    ================================================== -->
 
-	<div class="page-wrapper">
+	<div class="page-wrapper settings">
 		<div id="top_settings">
 				<h1>Settings</h1>
 				<img id="profpic" src="../img/fb-profilepic.jpg" />
@@ -55,12 +45,17 @@
 
 			<div id="middle_settings">
 				<img id="fb_logo" src="" />
-				<h2>
+				<h2>FACEBOOK SETTINGS</h2>
+				<h6 class="ital">Change your current password</h6>
+				<form>
+					Current Password: <input type="password" name="currentpassword"><br>
+					New Password: <input type="password" name="newpassword"<br>
+				</form>
 			</div>
 
 			<div id="bottom_settings">
-				<h3>Timeline Filter</h3>
-				<h6>Change the way you view your trips!</h6>
+				<h2>Timeline Filter</h3>
+				<h6 class="ital">Change the way you view your trips!</h6>
 				<button type="button" class="settings_button" id="button_time">Time</button>
 				<button type="button" class="settings_button" id="button_category">Category</button>
 				<button type="button" class="settings_button" id="button_name">Trip Name</button>

@@ -19,63 +19,75 @@
 <body>
 	<!-- Navbar
     ================================================== -->
- <div class="navbar navbar-fixed-top">
-   <div class="navbar-inner">
-     <div class="container">
-	   <div id="logo"></div>
+ <div class="navbar">
+ 	<div id="logo"></div>
 
-       <div class="nav-collapse collapse" id="main-menu">
-        <ul class="nav" id="main-menu-left">
-        </ul>
-
-        <ul class="nav pull-right" id="main-menu-right">
-			<li><div id="user" class="word-icons">Hello, Folashade!</div></li>
-			<li><div id="settings"></div></li>
-			<li><div id="create-trip"></div></li>
-			<li><div id="logout" class="word-icons">logout</div></li>
-        </ul>
-
-       </div>
-     </div>
-   </div>
+ 	<ul id="main-menu-right">
+ 		<li id="user">Hello, User!</li>
+ 		<li id="settings" class="pic-icon"></li>
+ 		<li id="create-trip" class="pic-icon"></li>
+ 		<li id="logout">logout</li>
+ 	</ul>
  </div>
-
 
 
  <!-- Content
    ================================================== -->
 
-	<div class="page-wrapper">
+	<div class="page-wrapper dashboard">
 		<div id="trip_header">
-				<h1>Trip Summary Details</h1>
-				<div id="transport_method"><div>
-				<div id="trip_logistics"></div>
-				<div id="attending"></div>
-			</div>
+			<h1>Trip Summary Details</h1>
+			<div id="transport_method"><img src="../img/car-icon.jpg"  alt="car"/></div>
+			
+			<div id="trip_logistics">
+				<div id="trip_name">
+            		Spring Break
+          		</div>
+          		<div id="trip_creator">
+           			created by Meghna
+          		</div>
+         		<div id="trip_dates">
+            		3/12-3/21
+         		</div>
+         		<div id="trip_dest">
+        			PIT to MIA
+         		</div>
+        	</div>
+       
+        	<div id="attending">
+          		ATTENDING:<br>
+          		<img src="../img/fbprofilepic-small.jpg" alt="Someone attending" />
+          		<img src="../img/fbprofilepic-small.jpg" alt="Someone attending" />
+        	</div>
+		</div>
 
 			<div id="trip_categories">
-				<h3>Categories</h3>
+				<h3>CATEGORIES</h3>
 				<h6>Click one to filter conversation by that topic</h6>
 				<ul id="filter_categories">
-					<li><img id="food" src="" /></li>
-					<li><img id="hotel" src="" /></li>
-					<li><img id="weather" src="" /></li>
-					<li><img id="activities" src="" /></li>
-					<li><img id="pictures" src="" /></li>
-					<li><img id="other" src="" /></li>
+					<li><img id="food" src="../img/forks.png" /></li>
+					<li><img id="hotel" src="../img/hotel.png" /></li>
+					<li><img id="weather" src="../img/snowflake.png" /></li>
+					<li><img id="activities" src="../img/swim.png" /></li>
+					<li><img id="pictures" src="../img/camera.png" /></li>
+					<li><img id="other" src="../img/questionmark.png" /></li>
 				</ul>
+
+				<div id="trip_notes">
+          			Pull some sort of notes from some sort of database
+        		</div>
 			</div>
 
 			<div id="trip_input">
 				<ul id="categories_input">
-					<li><img id="food" src="" /></li>
-					<li><img id="hotel" src="" /></li>
-					<li><img id="weather" src="" /></li>
-					<li><img id="activities" src="" /></li>
-					<li><img id="pictures" src="" /></li>
-					<li><img id="other" src="" /></li>
+					<li><img id="food" src="../img/forks.png" /></li>
+					<li><img id="hotel" src="../img/hotel.png" /></li>
+					<li><img id="weather" src="../img/snowflake.png" /></li><br>
+					<li><img id="activities" src="../img/swim.png" /></li>
+					<li><img id="pictures" src="../img/camera.png" /></li>
+					<li><img id="other" src="../img/questionmark.png" /></li>
 				</ul>
-				<textarea rows="4" cols="70" placeholder="Type information here"></textarea>
+				<textarea rows="6" cols="800" placeholder="Type information here"></textarea>
 			</div>
 	</div>
 	
