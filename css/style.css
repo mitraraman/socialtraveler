@@ -96,33 +96,31 @@ h3 {
 #logo {
 	width: 15em;
 	height: 15em;
-	background: url(../img/logo.gif);
-	background-repeat: no-repeat;
+/*	background: url(../img/logo.gif);
+	background-repeat: no-repeat;*/
 	z-index:7000;
 	top:0;
 	margin-top: -3em;
 	margin-left: 2em;
+	
 }
 
 .navbar {
-	margin-top: -10em;
+	margin-top: 6em;
 	z-index:200;
 	width: 100%;
 	background: url(../img/txtr.gif);
 	height: 5.8em;
 	border-top: 0.5em solid #c5b69b;
-	position: absolute;
 	left: 0;
 }
 
-ul#main-menu-right{
-	list-style-type: none;
-	position: absolute;
+#main-menu-right{
 	margin-top: -12em;
-	right: 0;
+	float: right;
 }
 
-#main-menu-right li{
+#main-menu-right div{
 	display: inline-block;
 	margin: 0.5em;
 	font-size: 1.7em;
@@ -131,25 +129,30 @@ ul#main-menu-right{
 	color: #fff;
 	height: 1em;
 	text-align: center;
-	border-right: 0.1em solid #fff;
 }
 
 /* Nav Icons
 *******************************************************************************/
 
 #settings{
-	width: 1em;
+/*	width: 1em;
 	background: url(../img/settings.png);
 	background-position:center;	
-	padding-right: 0.5em;
+	padding-right: 0.5em;*/
+	width: 2em;
 }
 
 #create-trip{
-	/*width: 1em;
-	background: url(../img/plus.png);*/
+	/*width: 1em; */
+	/*background: url(../img/plus.png);
 	background-position:center; 
 	background-size: 42px;
-	padding-right: 0.5em;
+	width: 1em;
+	padding-right: 0.5em;*/
+	width: 2em;
+}
+
+#create-trip img{
 }
 
 #user{
