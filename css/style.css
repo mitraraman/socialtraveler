@@ -120,7 +120,7 @@ h3 {
 	float: right;
 }
 
-#main-menu-right div{
+#main-menu-right li{
 	display: inline-block;
 	margin: 0.5em;
 	font-size: 1.7em;
@@ -129,6 +129,10 @@ h3 {
 	color: #fff;
 	height: 1em;
 	text-align: center;
+}
+.pic-icon img{
+	width:30px;
+	height:30px;
 }
 
 /* Nav Icons
