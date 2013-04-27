@@ -23,9 +23,9 @@
  	<div id="logo"></div>
 
  	<ul id="main-menu-right">
- 		<li id="user">Hello, User!</li>
- 		<li id="settings" class="pic-icon gear"><img src="../img/settings.png" alt="settings"/></li>
- 		<li id="create-trip" class="pic-icon plus"><img src="../img/plus.png" alt="invite friends"/></li>
+ 		<li id="user" class="notlast">Hello, User!</li>
+ 		<li id="settings" class="pic-icon notlast"><a href="../pages/settings.html"><img src="../img/settings.png" alt="settings"/></a></li>
+ 		<li id="create-trip" class="pic-icon plus notlast"><a href="../pages/create_trip.html"><img src="../img/plus2.png" alt="create a trip"/></a></li>
  		<li id="logout">logout</li>
  	</ul>
  </div>
@@ -37,7 +37,7 @@
 	<div class="page-wrapper dashboard">
 		<div id="trip_header">
 			<h1>Trip Summary Details</h1>
-			<div id="transport_method"><img src="../img/car-icon.jpg"  alt="car"/></div>
+			<div id="transport_method">Car</div>
 			
 			<div id="trip_logistics">
 				<div id="trip_name">
@@ -62,9 +62,9 @@
 		</div>
 
 			<div id="trip_categories">
-				<h3>CATEGORIES</h3>
+				<h3>CATEGORIES</h3><br>
 				<h6>Click one to filter conversation by that topic</h6>
-				<ul id="filter_categories">
+				<ul id="filter_categories" class="filter">
 					<li><img id="food" src="../img/forks.png" /></li>
 					<li><img id="hotel" src="../img/hotel.png" /></li>
 					<li><img id="weather" src="../img/snowflake.png" /></li>
