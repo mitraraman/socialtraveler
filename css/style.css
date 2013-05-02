@@ -353,13 +353,14 @@ h3 {
 	margin:auto;
 	margin-top:5px;
 	margin-bottom: 5px;
+	border-radius: 15px;
+	width:100px;
 }
 .settings{
 	background-color: #c54232;
 	color: #fef6dd;
 	width: 80%;
 	margin: auto;
-	margin-top: 190px;
 	margin-bottom: 200px;
 	border: 10px solid #c54232;
 }
@@ -368,12 +369,29 @@ h3 {
 	border: 2px solid #fef6dd;
  
 }
+.settings form{
+	text-align: right;
+	width:400px;
+	margin: auto;
+}
+input.cur{
+	padding-left: 25px;
+}
+input.new{
+	padding-right: 25px;
+}
 #save_settings{
 	margin-bottom:100px;
 }
 .ital{
 	font-style: italic;
 	font-size:40%;
+}
+.settings button{
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
 }
 
 /*Junki's Create a trip CSS
