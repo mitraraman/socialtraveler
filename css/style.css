@@ -62,7 +62,7 @@ body {
 }
 
 .page-wrapper {
-	margin-top:190px;
+
 	text-align:center;
 }
 
@@ -96,30 +96,28 @@ h3 {
 #logo {
 	width: 15em;
 	height: 15em;
-	background: url(../img/logo.gif);
-	background-repeat: no-repeat;
+/*	background: url(../img/logo.gif);
+	background-repeat: no-repeat;*/
 	z-index:7000;
 	top:0;
 	margin-top: -3em;
 	margin-left: 2em;
+	
 }
 
 .navbar {
-	margin-top: -10em;
+	margin-top: 6em;
 	z-index:200;
 	width: 100%;
 	background: url(../img/txtr.gif);
 	height: 5.8em;
 	border-top: 0.5em solid #c5b69b;
-	position: absolute;
 	left: 0;
 }
 
-ul#main-menu-right{
-	list-style-type: none;
-	position: absolute;
+#main-menu-right{
 	margin-top: -12em;
-	right: 0;
+	float: right;
 }
 
 #main-menu-right li{
@@ -131,25 +129,42 @@ ul#main-menu-right{
 	color: #fff;
 	height: 1em;
 	text-align: center;
-	border-right: 0.1em solid #fff;
+}
+.pic-icon img{
+	vertical-align: baseline;
+
+}
+.plus{
+	width:44px;
+	height:34px;
+}
+.notlast:after{
+	content:"|";
+
 }
 
 /* Nav Icons
 *******************************************************************************/
 
 #settings{
-	width: 1em;
+/*	width: 1em;
 	background: url(../img/settings.png);
 	background-position:center;	
-	padding-right: 0.5em;
+	padding-right: 0.5em;*/
+	width: 2em;
 }
 
 #create-trip{
-	/*width: 1em;
-	background: url(../img/plus.png);*/
+	/*width: 1em; */
+	/*background: url(../img/plus.png);
 	background-position:center; 
 	background-size: 42px;
-	padding-right: 0.5em;
+	width: 1em;
+	padding-right: 0.5em;*/
+
+}
+
+#create-trip img{
 }
 
 #user{
@@ -384,13 +399,14 @@ ul#main-menu-right{
 	margin:auto;
 	margin-top:5px;
 	margin-bottom: 5px;
+	border-radius: 15px;
+	width:100px;
 }
 .settings{
 	background-color: #c54232;
 	color: #fef6dd;
 	width: 80%;
 	margin: auto;
-	margin-top: 190px;
 	margin-bottom: 200px;
 	border: 10px solid #c54232;
 }
@@ -399,12 +415,29 @@ ul#main-menu-right{
 	border: 2px solid #fef6dd;
  
 }
+.settings form{
+	text-align: right;
+	width:400px;
+	margin: auto;
+}
+input.cur{
+	padding-left: 25px;
+}
+input.new{
+	padding-right: 25px;
+}
 #save_settings{
 	margin-bottom:100px;
 }
 .ital{
 	font-style: italic;
 	font-size:40%;
+}
+.settings button{
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
 }
 
 /*Junki's Create a trip CSS
@@ -492,9 +525,9 @@ ul#main-menu-right{
   padding-left: 15px;
 }
 #trip_categories h3{
-  padding-top: 15px;
+  margin-top: 20px;
   margin-bottom: 0;
-
+  float:left;
 }
 #trip_categories h6{
   display:inline;
@@ -508,6 +541,7 @@ ul#main-menu-right{
 
   padding-top: 20px;
   padding-bottom: 35px;
+  clear:both;
 }
 #trip_input{
   border-top: 3px solid #fef6dd;
@@ -519,14 +553,19 @@ ul#main-menu-right{
 	margin-left: 0;
   display: inline-block;
   margin-bottom: 0;
+  padding: 15px;
 }
 textarea{
   display: inline-block;
   color: #fef6dd;
+}.filter{
+	float:left;
 }
 #filter_categories{
 	padding-left: 0;
 	margin: 0;
+	float:none;
+
 }
 #filter_categories li{
 	width:0;
@@ -546,7 +585,65 @@ textarea{
 	width:60px;
 	padding-left: 0;
 }
+#transport_method{
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	color:#c54232;
+	background-color:#fef6dd;
+	vertical-align: center;
+}
 
-
-
-
+/*Trip Preview
+*******************************************************************************/
+.preview_method{
+	padding-bottom: 15px;
+}
+.preview_method li{
+	display:inline-block;
+	width:80px;
+	height:80px;
+	border-radius: 40px;
+	background: #fef6dd;
+	color:#c54232;
+	margin-right: 10px;
+	line-height: 80px;
+}
+.preview_method li:hover{
+	width:80px;
+	height:80px;
+	border-radius: 40px;
+	background: #c54232;
+	color:#fef6dd;
+	border: 2px solid #fef6dd;
+}
+.trip-preview{
+	text-align: center;
+	margin:auto;
+}
+td{
+	height: 40px;
+	vertical-align: top;
+	width:100px;
+	text-align: left;
+	font-style: italic; 
+}
+.first{
+	text-align: right;
+	text-transform: uppercase;
+	font-style: normal;
+}
+.sec{
+	width:30px;
+}
+#preview-trip form{
+	padding-top: 20px;
+	padding-left: 131px;
+}
+#preview-trip input{
+	width:100px;
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
+}
