@@ -24,8 +24,7 @@ _copy from homework assignments_
 + Just Copy and Paste from the template to start working on your own page
 + signup/login - fo
 + home/timelines - fo
-+ create trip/trip edit - mitra
-+ trip summary - mitra
-+ trip dashboard - junki
-+ settings -junki
++ create trip/trip edit - Junki DONE (is there anything I should change?)
++ trip preview - junki DONE
++ settings -junki DONE
 + invite friends - mitra
