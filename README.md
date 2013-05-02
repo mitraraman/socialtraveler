@@ -41,8 +41,9 @@ _copy from homework assignments_
 
 
 ## For Mitra
-Files 
+Final Files 
 =========
 1. index.html
 2. new_dash.html
-Add the logo to the homepage (and all pages) that's clickable
+3. create_trip
+
