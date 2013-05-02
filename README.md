@@ -38,3 +38,7 @@ _copy from homework assignments_
 + settings -junki DONE
 + invite friends - mitra
 >>>>>>> eba6631a8aa02db66a2c34188ec01e88e256a220
+
+
+## Mitra
+Add the logo to the homepage (and all pages) that's clickable
