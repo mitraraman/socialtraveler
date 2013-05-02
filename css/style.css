@@ -814,48 +814,57 @@ td{
 	border-radius: 20px;
 	color: #c54232;
 /*	height: 100px;*/
+	padding-bottom: 15px;
 	
 }
 
 .travel-feed-notification-details {
 	color: #c54232;
 	margin-top: 3em;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	padding: 5px;
+	
 	
 	
 }
 
 .travel-feed-add {
-	width: 60px;
-	height: 60px;
-	background-color: #c54232;
-	background-image: url(../img/plus.png);
+	width: 20px;
+	height: 20px;
+/*	background-color: #c54232;*/
+	background-image: url(../img/add.png);
 	color: #c54232;
 	font-size: 1.2em;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 20px;
+/*	opacity: .8;*/
 }
 
 .travel-feed-add p {
 	font-size: 1.2em;
 	position: relative;
-	left: 100%;
-	top: 30%;
+	left: 150%;
+	top: 10%;
 }
 
 .travel-feed-decline {
-	width: 60px;
-	height: 60px;
-	background-color: #c54232;
-	background-image: url(../img/plus.png);
+	width: 20px;
+	height: 20px;
+/*	background-color: #c54232;*/
+	background-image: url(../img/decline.png);
 	color: #c54232;
 	font-size: 1.2em;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 20px;
 	
 }
 
 .travel-feed-decline p {
 	font-size: 1.2em;
 	position: relative;
-	left: 120%;
-	top: 30%;
+	left: 170%;
+	top: 10%;
 }
 
