@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social Traveler</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../images/favicon.ico" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Social Traveler - an online platform for trip collaboration">
+
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+
+	<script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
+	
+</head>
+
+
+<body>
+
+	<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '172708956215256',                        // App ID from the app dashboard
+      channelUrl : 'http://www.contrib.andrew.cmu.edu/~jnakayam/index.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+	<!-- Navbar
+    ================================================== -->
+<div class="navbar">
+ 	<div id="logo"></div>
+
+ 	<ul id="main-menu-right">
+ 		<li id="user" class="notlast">Hello, User!</li>
+ 		<li id="settings" class="pic-icon notlast"><a href="../pages/settings.html"><img src="../img/settings.png" alt="settings"/></a></li>
+ 		<li id="create-trip" class="pic-icon plus notlast"><a href="../pages/create_trip.html"><img src="../img/plus2.png" alt="create a trip"/></a></li>
+ 		<li id="logout">logout</li>
+ 	</ul>
+ </div>
+
+ <!-- Content
+   ================================================== -->
+
+	<div class="page-wrapper">
+		<div class="container-fluid">
+		  <div class="row-fluid">
+
+		    <div class="span6" id="home-dash">
+				<div id="user-pic">
+					<div id="user-pic-inner"></div>
+					<div id="users_name">Meghna Ragunathan</div>
+				</div>
+				
+				<div class="home-dash-item" id="1">
+					<div class="open"></div>
+					<div class="home-dash-item-header">
+						<div class="home-dash-item-date">3/12-3/14</div>
+						
+						Spring Break Trip 
+						<div class="home-dash-item-location">PIT to Miami</div>
+						
+					</div>
+					<div class="home-dash-item-info">
+						<div class="span2 home-dash-item-options">
+							<div class="icon-question"></div>
+							<div class="icon-food"></div>
+							<div class="icon-car"></div>
+							<div class="icon-shop"></div>	
+						</div>
+						<div class="span10 home-dash-item-data">
+							Let's go to the mall
+							<div class="home-dash-item-response">
+								Too Expensive!
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		
+		    <div class="span5" id="notif">
+				<div id="travel-feed-title">Travel Feed</div>
+				<div class="travel-feed-notification">
+					<div class="travel-feed-notification-details">Jack invited you to Chicago </div>
+					<div class="travel-feed-add"><p>Add</p></div>
+					<div class="travel-feed-decline"><p>Decline</p></div>
+					
+				</div>
+		    </div>
+		
+		  </div>
+		</div>
+	</div>
+	
+    <!-- javascript
+    ================================================== -->
+	<script src="../js/jquery-1.9.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/script.js"></script>
+
+
+
+
+</body>
+
+
+
+</html>
+

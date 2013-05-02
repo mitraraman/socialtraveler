@@ -22,13 +22,13 @@
 <body>
 <!-- Navbar
     ================================================== -->
- <div class="navbar">
+<div class="navbar">
  	<div id="logo"></div>
 
  	<ul id="main-menu-right">
- 		<li id="user">Hello, User!</li>
- 		<li id="settings" class="pic-icon"></li>
- 		<li id="create-trip" class="pic-icon"></li>
+ 		<li id="user" class="notlast">Hello, User!</li>
+ 		<li id="settings" class="pic-icon notlast"><a href="../pages/settings.html"><img src="../img/settings.png" alt="settings"/></a></li>
+ 		<li id="create-trip" class="pic-icon plus notlast"><a href="../pages/create_trip.html"><img src="../img/plus2.png" alt="create a trip"/></a></li>
  		<li id="logout">logout</li>
  	</ul>
  </div>
@@ -51,14 +51,14 @@
 						<input type="radio" name="transportation" class="trans-mode" value="train">train
 
 						<h3>TRIP NAME</h3><br />
-						<input type="text" value="trip-name" name="trip-name" class="trip-input">
+						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">
 
 						<h3>DATE</h3><br />
 						<input type="date" name="start-date" value="start-date" class="trip-input">
 						<input type="date" name="end-date" value="end-date" class="trip-input" >
 
 						<h3>DESTINATION</h3><br />
-						<input type="text" name="end-dest" value="end-dest" class="trip-input">
+						<input type="text" name="end-dest" placeholder="End Destination" class="trip-input">
 
 						<h3>INVITE FRIENDS</h3><br />
 						<!--invite friends box from FB-->

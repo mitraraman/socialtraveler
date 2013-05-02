@@ -62,7 +62,7 @@ body {
 }
 
 .page-wrapper {
-	margin-top:190px;
+	margin-top: 5em;
 	text-align:center;
 }
 
@@ -105,8 +105,18 @@ h3 {
 	
 }
 
+#logo {
+	width: 200px;
+	height: 200px;
+	background: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	z-index:7000;
+	position: absolute;
+	top:4em;
+}
+
 .navbar {
-	margin-top: 6em;
+	margin-top: 4em;
 	z-index:200;
 	width: 100%;
 	background: url(../img/txtr.gif);
@@ -120,7 +130,7 @@ h3 {
 	float: right;
 }
 
-#main-menu-right div{
+#main-menu-right li{
 	display: inline-block;
 	margin: 0.5em;
 	font-size: 1.7em;
@@ -129,6 +139,18 @@ h3 {
 	color: #fff;
 	height: 1em;
 	text-align: center;
+}
+.pic-icon img{
+	vertical-align: baseline;
+
+}
+.plus{
+	width:44px;
+	height:34px;
+}
+.notlast:after{
+	content:"|";
+
 }
 
 /* Nav Icons
@@ -149,7 +171,7 @@ h3 {
 	background-size: 42px;
 	width: 1em;
 	padding-right: 0.5em;*/
-	width: 2em;
+
 }
 
 #create-trip img{
@@ -257,20 +279,27 @@ h3 {
 /* 2- Home/Dashboard
 *******************************************************************************/
 #home-dash {
-	margin-top: 2em;
 	height: 55em;
 	padding: 2em;	
 	position:relative;
-	background-color: #c54232;
-	text-align: center;
+/*	background-color: #c54232;*/
+	text-align: left;
+	border-left: 6px solid #c1c1c1;
+	margin-top: 16em;
+	margin-left: 5em;
+	font-size: 1em;
 
 }
 
 #notif {
-	height: 55em;
+	min-height: 60em;
 	padding: 0;	
 	position:relative;
-	background-color: #c54232;
+	background-color: #f1e2c7;
+	margin-top:-5em;
+	overflow: hidden;
+/*	height: */
+	margin-bottom:0;
 }
 
 .inner-content {
@@ -334,6 +363,52 @@ h3 {
 	line-height: 80px;
 }
 
+
+
+
+/* Settings
+*******************************************************************************/
+
+#upload_prof {
+	background-color: #c5b69b;
+	color: #fff;
+}
+
+#middle_settings {
+	text-align:center;
+	margin-top: 20px;
+}
+
+#bottom_settings {
+	margin-top: 20px;
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+.settings {
+	background-color: #fff;
+	border-radius: 20px;	
+	display:block;
+	width: 230px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+#settings-page {
+	min-height: 600px;
+	padding: 20px;	
+	position:relative;
+	background-color: #c54232;
+	text-align: center;
+}
+
+#save_settings{
+	background-color: #c54232;
+	color: #fef6dd;
+	border-radius: 5px;	
+	
+}
+
 /* 2- Settings
 *******************************************************************************/
 .settings_button{
@@ -341,13 +416,14 @@ h3 {
 	margin:auto;
 	margin-top:5px;
 	margin-bottom: 5px;
+	border-radius: 15px;
+	width:100px;
 }
 .settings{
 	background-color: #c54232;
 	color: #fef6dd;
 	width: 80%;
 	margin: auto;
-	margin-top: 190px;
 	margin-bottom: 200px;
 	border: 10px solid #c54232;
 }
@@ -356,12 +432,29 @@ h3 {
 	border: 2px solid #fef6dd;
  
 }
+.settings form{
+	text-align: right;
+	width:400px;
+	margin: auto;
+}
+input.cur{
+	padding-left: 25px;
+}
+input.new{
+	padding-right: 25px;
+}
 #save_settings{
 	margin-bottom:100px;
 }
 .ital{
 	font-style: italic;
 	font-size:40%;
+}
+.settings button{
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
 }
 
 /*Junki's Create a trip CSS
@@ -449,9 +542,9 @@ h3 {
   padding-left: 15px;
 }
 #trip_categories h3{
-  padding-top: 15px;
+  margin-top: 20px;
   margin-bottom: 0;
-
+  float:left;
 }
 #trip_categories h6{
   display:inline;
@@ -465,6 +558,7 @@ h3 {
 
   padding-top: 20px;
   padding-bottom: 35px;
+  clear:both;
 }
 #trip_input{
   border-top: 3px solid #fef6dd;
@@ -476,14 +570,19 @@ h3 {
 	margin-left: 0;
   display: inline-block;
   margin-bottom: 0;
+  padding: 15px;
 }
 textarea{
   display: inline-block;
   color: #fef6dd;
+}.filter{
+	float:left;
 }
 #filter_categories{
 	padding-left: 0;
 	margin: 0;
+	float:none;
+
 }
 #filter_categories li{
 	width:0;
@@ -503,7 +602,269 @@ textarea{
 	width:60px;
 	padding-left: 0;
 }
+#transport_method{
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	color:#c54232;
+	background-color:#fef6dd;
+	vertical-align: center;
+}
+
+/*Trip Preview
+*******************************************************************************/
+.preview_method{
+	padding-bottom: 15px;
+}
+.preview_method li{
+	display:inline-block;
+	width:80px;
+	height:80px;
+	border-radius: 40px;
+	background: #fef6dd;
+	color:#c54232;
+	margin-right: 10px;
+	line-height: 80px;
+}
+.preview_method li:hover{
+	width:80px;
+	height:80px;
+	border-radius: 40px;
+	background: #c54232;
+	color:#fef6dd;
+	border: 2px solid #fef6dd;
+}
+.trip-preview{
+	text-align: center;
+	margin:auto;
+}
+td{
+	height: 40px;
+	vertical-align: top;
+	width:100px;
+	text-align: left;
+	font-style: italic; 
+}
+.first{
+	text-align: right;
+	text-transform: uppercase;
+	font-style: normal;
+}
+.sec{
+	width:30px;
+}
+#preview-trip form{
+	padding-top: 20px;
+	padding-left: 131px;
+}
+#preview-trip input{
+	width:100px;
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
+}
 
 
 
+
+
+
+/* new dash styles */
+#user-pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	background-color: gray;
+	border: 10px solid #c1c1c1;
+	background: transparent;
+	
+	position: relative;
+	margin-top: -17em;
+	margin-left: -10em;
+}
+
+#user-pic-inner {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-color: white;
+	border: 5px solid #c1c1c1;
+	background-image: url(../img/fb-profilepic.jpg);
+	background-size: 100% 100%;
+	margin:auto;
+	margin-top:10%;
+}
+
+#users_name{
+	font-size: 3em;
+	position:absolute;
+	left: 120%;
+	top: 40%;
+	min-width: 400px;
+	color: #c54232;
+	font-family: ArcherPro-Medium;
+}
+.home-dash-item {
+	margin-top:3em;
+	background-color: #c54232;
+}
+
+.open {
+	width: 50px;
+	height: 50px;
+	background-color: #c1c1c1;
+	border-radius: 50px;
+	position: absolute;
+	left: -2em;
+}
+
+.home-dash-item-header {
+	font-family: ArcherPro-Medium;
+	font-size: 2em;
+	padding: .5em;
+	color: #fff;
+	line-height: 1.2;
+}
+
+.home-dash-item-location {
+	font-family: ArcherPro-Hairline;
+	font-size: .8em;
+}
+
+.home-dash-item-date {
+	font-family: ArcherPro-Hairline;
+	position: absolute;
+	right:2em;
+	font-size: .8em;
+	
+}
+
+.icon-question{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/questionmark.png);
+}
+
+.icon-food{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/forks.png);
+}
+
+.icon-car{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/camera.png);
+}
+
+.icon-shop{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+}
+
+.home-dash-item-data {
+	height: 408px;
+	background-color: #fff;
+	border-right: 8px solid #c1c1c1;
+	border-bottom: 8px solid #c1c1c1;
+	border-radius: 8px;
+	font-size: 1.5em;
+	line-height: 1.3;
+	font-family: ArcherPro-Medium;
+}
+
+.home-dash-item-response {
+	background-color: #c1c1c1;
+	color: #fff;
+}
+
+
+
+
+
+
+/* Travel Feed */
+#travel-feed-title {
+	background-color: #c54232;
+	padding: 8%;
+	font-size: 3em;
+	font-family: ArcherPro-Light;
+	border-radius: 20px;
+/*	height:100px;*/
+	margin-top: 3em;
+	color: #fff;
+}
+
+.travel-feed-arrow {
+	width: 60px;
+	height: 60px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+}
+
+.travel-feed-notification {
+	background-color: #fff;
+	font-family: ArcherPro-Medium;
+	border-radius: 20px;
+	color: #c54232;
+/*	height: 100px;*/
+	padding-bottom: 15px;
+	
+}
+
+.travel-feed-notification-details {
+	color: #c54232;
+	margin-top: 3em;
+	font-size: 1.6em;
+	padding: 5px;
+	
+	
+	
+}
+
+.travel-feed-add {
+	width: 20px;
+	height: 20px;
+/*	background-color: #c54232;*/
+	background-image: url(../img/add.png);
+	color: #c54232;
+	font-size: 1.2em;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 20px;
+/*	opacity: .8;*/
+}
+
+.travel-feed-add p {
+	font-size: 1.2em;
+	position: relative;
+	left: 150%;
+	top: 10%;
+}
+
+.travel-feed-decline {
+	width: 20px;
+	height: 20px;
+/*	background-color: #c54232;*/
+	background-image: url(../img/decline.png);
+	color: #c54232;
+	font-size: 1.2em;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 20px;
+	
+}
+
+.travel-feed-decline p {
+	font-size: 1.2em;
+	position: relative;
+	left: 170%;
+	top: 10%;
+}
 

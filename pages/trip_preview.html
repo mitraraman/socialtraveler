@@ -26,12 +26,49 @@
  	<div id="logo"></div>
 
  	<ul id="main-menu-right">
- 		<li id="user">Hello, User!</li>
- 		<li id="settings" class="pic-icon"></li>
- 		<li id="create-trip" class="pic-icon"></li>
+ 		<li id="user" class="notlast">Hello, User!</li>
+ 		<li id="settings" class="pic-icon notlast"><a href="../pages/settings.html"><img src="../img/settings.png" alt="settings"/></a></li>
+ 		<li id="create-trip" class="pic-icon plus notlast"><a href="../pages/create_trip.html"><img src="../img/plus2.png" alt="create a trip"/></a></li>
  		<li id="logout">logout</li>
  	</ul>
  </div>
+
+<!-- Content
+   ================================================== -->
+ <div class="page-wrapper preview">
+		<div class="container-fluid">
+		  <div class="row-fluid">
+
+		    <div class="span9" id="preview-trip">
+				<div class="inner-content">
+					<h1>Trip Preview</h1>
+					<br>
+					<ul class="preview_method">
+						<li>bus</li>
+						<li>plane</li>
+						<li>car</li>
+						<li>train</li>
+					</ul>
+					<table class="trip-preview">
+						<tr><td class="first">Trip Name</td><td class="sec"></td><td>Spring Break</td></tr>
+						<tr><td class="first">Date</td><td class="sec"></td><td>4-3-13</td><td>4-5-13</td></tr>
+						<tr><td class="first">Destination</td><td class="sec"></td><td>Chicago</td></tr>
+						<tr><td class="first">Attending</td><td class="sec"></td><td><img src="../img/fbprofilepic-small.jpg" alt="profile pic" /></td><td><img src="../img/fbprofilepic-small.jpg" alt="profile pic" /></td></tr>
+					</table>
+
+
+					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
+
+						<input type="submit" value="Done">
+						<input type="button" value="Edit">
+
+					</form>
+					
+				</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
 
      <!-- javascript
     ================================================== -->
