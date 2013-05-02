@@ -62,7 +62,7 @@ body {
 }
 
 .page-wrapper {
-	margin-top:190px;
+
 	text-align:center;
 }
 
@@ -161,7 +161,7 @@ h3 {
 	background-size: 42px;
 	width: 1em;
 	padding-right: 0.5em;*/
-	width: 2em;
+
 }
 
 #create-trip img{
@@ -455,7 +455,6 @@ h3 {
   border-top: 3px solid #fef6dd;
   color: #fef6dd;
   text-align: left;
-  padding-top: 20px;
 }
 #trip_categories *{
   text-align: left;
@@ -464,9 +463,7 @@ h3 {
 #trip_categories h3{
   margin-top: 20px;
   margin-bottom: 0;
-  display:inline;
   float:left;
-
 }
 #trip_categories h6{
   display:inline;
@@ -533,5 +530,56 @@ textarea{
 	vertical-align: center;
 }
 
-
-
+/*Trip Preview
+*******************************************************************************/
+.preview_method{
+	padding-bottom: 15px;
+}
+.preview_method li{
+	display:inline-block;
+	width:80px;
+	height:80px;
+	border-radius: 40px;
+	background: #fef6dd;
+	color:#c54232;
+	margin-right: 10px;
+	line-height: 80px;
+}
+.preview_method li:hover{
+	width:80px;
+	height:80px;
+	border-radius: 40px;
+	background: #c54232;
+	color:#fef6dd;
+	border: 2px solid #fef6dd;
+}
+.trip-preview{
+	text-align: center;
+	margin:auto;
+}
+td{
+	height: 40px;
+	vertical-align: top;
+	width:100px;
+	text-align: left;
+	font-style: italic; 
+}
+.first{
+	text-align: right;
+	text-transform: uppercase;
+	font-style: normal;
+}
+.sec{
+	width:30px;
+}
+#preview-trip form{
+	padding-top: 20px;
+	padding-left: 131px;
+}
+#preview-trip input{
+	width:100px;
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
+}

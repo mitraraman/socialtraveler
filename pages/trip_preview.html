@@ -39,30 +39,27 @@
 		<div class="container-fluid">
 		  <div class="row-fluid">
 
-		    <div class="span9" id="create-trip">
+		    <div class="span9" id="preview-trip">
 				<div class="inner-content">
 					<h1>Trip Preview</h1>
-					<br /><br />
+					<br>
+					<ul class="preview_method">
+						<li>bus</li>
+						<li>plane</li>
+						<li>car</li>
+						<li>train</li>
+					</ul>
+					<table class="trip-preview">
+						<tr><td class="first">Trip Name</td><td class="sec"></td><td>Spring Break</td></tr>
+						<tr><td class="first">Date</td><td class="sec"></td><td>4-3-13</td><td>4-5-13</td></tr>
+						<tr><td class="first">Destination</td><td class="sec"></td><td>Chicago</td></tr>
+						<tr><td class="first">Attending</td><td class="sec"></td><td><img src="../img/fbprofilepic-small.jpg" alt="profile pic" /></td><td><img src="../img/fbprofilepic-small.jpg" alt="profile pic" /></td></tr>
+					</table>
+
+
 					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
-						<input type="radio" name="transportation" class="trans-mode" value="plane">Plane
-						<input type="radio" name="transportation" class="trans-mode" value="bus">Bus
-						<input type="radio" name="transportation" class="trans-mode" value="car">Car
-						<input type="radio" name="transportation" class="trans-mode" value="train">train
 
-						<h3>TRIP NAME</h3><br />
-						<input type="text" value="trip-name" name="trip-name" class="trip-input" readonly>
-
-						<h3>DATE</h3><br />
-						<input type="date" name="start-date" value="start-date" class="trip-input" readonly>
-						<input type="date" name="end-date" value="end-date" class="trip-input" readonly>
-
-						<h3>DESTINATION</h3><br />
-						<input type="text" name="end-dest" value="end-dest" class="trip-input" readonly>
-
-						<h3>INVITE FRIENDS</h3><br />
-						<!--invite friends box from FB-->
-
-						<input type="submit" value="Submit">
+						<input type="submit" value="Done">
 						<input type="button" value="Edit">
 
 					</form>
