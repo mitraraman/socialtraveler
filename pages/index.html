@@ -23,6 +23,29 @@
     <script>
       Parse.initialize("BRih15D1JVSqGQG4ZqN7mC8xI1zdCaj19P7s1jN5", "qXPbI5HE86xRHRirKIoBclQknsBOPzXJLTmoovPX");
     </script>
+    
+    <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    Parse.FacebookUtils.init({
+      appId: '172708956215256',
+      channelUrl: 'https://rocky-reaches-7544.herokuapp.com/index.html',
+      status: true,
+      cookie: true,
+      xfbml: true
+    });
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<div id="logo"></div>
 
   <!-- Navbar
