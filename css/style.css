@@ -105,6 +105,16 @@ h3 {
 	
 }
 
+#logo {
+	width: 200px;
+	height: 200px;
+	background: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	z-index:7000;
+	position: fixed;
+	top:5.8em;
+}
+
 .navbar {
 	margin-top: 6em;
 	z-index:200;
