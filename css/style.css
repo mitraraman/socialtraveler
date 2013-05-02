@@ -62,7 +62,7 @@ body {
 }
 
 .page-wrapper {
-
+	margin-top: 5em;
 	text-align:center;
 }
 
@@ -111,12 +111,12 @@ h3 {
 	background: url(../img/logo.gif);
 	background-repeat: no-repeat;
 	z-index:7000;
-	position: fixed;
-	top:5.8em;
+	position: absolute;
+	top:4em;
 }
 
 .navbar {
-	margin-top: 6em;
+	margin-top: 4em;
 	z-index:200;
 	width: 100%;
 	background: url(../img/txtr.gif);
@@ -279,20 +279,27 @@ h3 {
 /* 2- Home/Dashboard
 *******************************************************************************/
 #home-dash {
-	margin-top: 2em;
 	height: 55em;
 	padding: 2em;	
 	position:relative;
-	background-color: #c54232;
-	text-align: center;
+/*	background-color: #c54232;*/
+	text-align: left;
+	border-left: 6px solid #c1c1c1;
+	margin-top: 16em;
+	margin-left: 5em;
+	font-size: 1em;
 
 }
 
 #notif {
-	height: 55em;
+	min-height: 60em;
 	padding: 0;	
 	position:relative;
-	background-color: #c54232;
+	background-color: #f1e2c7;
+	margin-top:-5em;
+	overflow: hidden;
+/*	height: */
+	margin-bottom:0;
 }
 
 .inner-content {
@@ -657,3 +664,198 @@ td{
 	border: 2px solid #c54232;
 	font-family: ArcherPro-Light;
 }
+
+
+
+
+
+
+/* new dash styles */
+#user-pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	background-color: gray;
+	border: 10px solid #c1c1c1;
+	background: transparent;
+	
+	position: relative;
+	margin-top: -17em;
+	margin-left: -10em;
+}
+
+#user-pic-inner {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-color: white;
+	border: 5px solid #c1c1c1;
+	background-image: url(../img/fb-profilepic.jpg);
+	background-size: 100% 100%;
+	margin:auto;
+	margin-top:10%;
+}
+
+#users_name{
+	font-size: 3em;
+	position:absolute;
+	left: 120%;
+	top: 40%;
+	min-width: 400px;
+	color: #c54232;
+	font-family: ArcherPro-Medium;
+}
+.home-dash-item {
+	margin-top:3em;
+	background-color: #c54232;
+}
+
+.open {
+	width: 50px;
+	height: 50px;
+	background-color: #c1c1c1;
+	border-radius: 50px;
+	position: absolute;
+	left: -2em;
+}
+
+.home-dash-item-header {
+	font-family: ArcherPro-Medium;
+	font-size: 2em;
+	padding: .5em;
+	color: #fff;
+	line-height: 1.2;
+}
+
+.home-dash-item-location {
+	font-family: ArcherPro-Hairline;
+	font-size: .8em;
+}
+
+.home-dash-item-date {
+	font-family: ArcherPro-Hairline;
+	position: absolute;
+	right:2em;
+	font-size: .8em;
+	
+}
+
+.icon-question{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/questionmark.png);
+}
+
+.icon-food{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/forks.png);
+}
+
+.icon-car{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/camera.png);
+}
+
+.icon-shop{
+	width: 100%;
+	height: 100px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+}
+
+.home-dash-item-data {
+	height: 408px;
+	background-color: #fff;
+	border-right: 8px solid #c1c1c1;
+	border-bottom: 8px solid #c1c1c1;
+	border-radius: 8px;
+	font-size: 1.5em;
+	line-height: 1.3;
+	font-family: ArcherPro-Medium;
+}
+
+.home-dash-item-response {
+	background-color: #c1c1c1;
+	color: #fff;
+}
+
+
+
+
+
+
+/* Travel Feed */
+#travel-feed-title {
+	background-color: #c54232;
+	padding: 8%;
+	font-size: 3em;
+	font-family: ArcherPro-Light;
+	border-radius: 20px;
+/*	height:100px;*/
+	margin-top: 3em;
+	color: #fff;
+}
+
+.travel-feed-arrow {
+	width: 60px;
+	height: 60px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+}
+
+.travel-feed-notification {
+	background-color: #fff;
+	font-family: ArcherPro-Medium;
+	border-radius: 20px;
+	color: #c54232;
+/*	height: 100px;*/
+	
+}
+
+.travel-feed-notification-details {
+	color: #c54232;
+	margin-top: 3em;
+	font-size: 1.4em;
+	padding: 5px;
+	
+	
+}
+
+.travel-feed-add {
+	width: 60px;
+	height: 60px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+	color: #c54232;
+	font-size: 1.2em;
+}
+
+.travel-feed-add p {
+	font-size: 1.2em;
+	position: relative;
+	left: 100%;
+	top: 30%;
+}
+
+.travel-feed-decline {
+	width: 60px;
+	height: 60px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+	color: #c54232;
+	font-size: 1.2em;
+	
+}
+
+.travel-feed-decline p {
+	font-size: 1.2em;
+	position: relative;
+	left: 120%;
+	top: 30%;
+}
+

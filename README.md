@@ -40,5 +40,9 @@ _copy from homework assignments_
 >>>>>>> eba6631a8aa02db66a2c34188ec01e88e256a220
 
 
-## Mitra
+## For Mitra
+Files 
+=========
+1. index.html
+2. new_dash.html
 Add the logo to the homepage (and all pages) that's clickable
