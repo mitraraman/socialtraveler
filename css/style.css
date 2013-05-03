@@ -82,7 +82,9 @@ h3 {
 	font-family: ArcherPro-Bold;
 	font-size: 16px;	
 }
-
+.row-fluid div.span9{
+	float:none;
+}
 
 
 /* Navigation
@@ -370,11 +372,18 @@ h3 {
 /* Create trip
 *************************************************/
 .create .row-fluid.firstfluid .span9{
-	padding-top:40px;
+	padding:30px;
 	background-color: #c54232;
 	color: #fef6dd;
-	margin: auto;
+	margin: 0 auto;
 	float:none;
+}
+
+.row-fluid.firstfluid .row-fluid{
+	border: 3px solid #fef6dd;
+	margin: auto;
+	width:92%;
+	padding: 2em;
 }
 .create .preview_method{
 	padding-top: 15px;
@@ -702,7 +711,7 @@ td{
 	background-color: #c54232;
 	padding: 30px;
 	margin: 0 auto;
-	padding-right: 45px;
+	color:#fef6dd;
 }
 
 #preview-trip button{
