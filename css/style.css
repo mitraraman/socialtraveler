@@ -246,22 +246,22 @@ h3 {
 }
 
 .button-wrap {
-	padding:5px;
 	background-color: #c54232;
 	margin:0 auto;
 	width: 220px;
-	margin-bottom: 10px;
 	font-family: ArcherPro-Light;
 	color:white;
+	margin-bottom: 10px;
+	padding: 5px;
 }
 
 .front-pg-buttons {
-/*	width:200px;*/
-/*	height:20px;*/
 	background-color: #c54232;
-	border: 2px solid #fef6dd;
 	margin-left: 0;
 	margin-right: 0;
+	color: white;
+	font-family: ArcherPro-Light;
+	border: 2px solid #fef6dd;
 }
 
 .front-pg-buttons:hover {
@@ -274,6 +274,13 @@ h3 {
 	background-color: #b9aa8e;
 }
 
+#login-button{
+	width: 215px;
+}
+
+#signup-button{
+	width: 215px;
+}
 
 /* 2- Home/Dashboard
 *******************************************************************************/
