@@ -1,3 +1,5 @@
+/* ChatBox
+*******************************************************************************/
 // The global datastore 
 var messages = [];
 
@@ -65,3 +67,23 @@ function refreshDOM(){
     container.scrollTop($("#chatroom")[0].scrollHeight);
   }
 }
+
+
+
+
+
+/* Trips & Trip Information
+*******************************************************************************/
+$(".open").click(function(){
+	var info = $(this)
+	var tripItem = $(info.parent());
+	var tripData = $(tripItem.children()[2]);
+			
+	if (tripData.is( ":visible" )){
+		tripData.slideUp();
+	}
+	else {
+		tripData.slideDown();	
+	}
+
+});
