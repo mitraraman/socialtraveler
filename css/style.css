@@ -118,6 +118,11 @@ h3 {
 	padding-top: 1.3em;
 	float: right;
 	font-family: ArcherPro-Hairline;
+	opacity: 0.8;	
+}
+
+#main-menu-right:hover {
+	opacity: 1;	
 }
 
 #main-menu-right li{
@@ -131,6 +136,7 @@ h3 {
 	text-align: top;
 /*	border-right: 2px solid #fff;*/
 }
+
 
 .pic-icon img{
 	vertical-align: baseline;
@@ -154,22 +160,25 @@ h3 {
 
 /* Nav Icons
 *******************************************************************************/
-#main-menu-right #user{
-/*	padding-right: 0.5em;/*/
-}
-
-#settings{
-/*	background-color: pink;*/
-}
-
-#create-trip{
-/*	background-color: pink;*/
-}
-
 
 #main-menu-right #logout{
 	padding-right: 1em;
-/*	color: #fef6dd;*/
+	opacity: 0.7;
+}
+
+#logout-button{
+	background-color: transparent;
+	border: 0;
+	color: #fff;
+	font-family: ArcherPro-Hairline;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;	
+}
+
+#logout-button:hover{
+	opacity: 1;
 }
 
 
