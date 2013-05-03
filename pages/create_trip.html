@@ -63,12 +63,8 @@
 						<input type="radio" name="transportation" class="trans-mode" value="car" id="Tcar">
 						<input type="radio" name="transportation" class="trans-mode" value="train" id="Ttrain">
 
-						<br>
-						<div id="trans" style="display:none;">trans</div>
-						<!-- <input type="hidden" name="trip-mode" value="trip-mode" class="trip-input" id="trip-mode"> -->
+						<br>						
 						
-						
-					
 						<input type="text" placeholder="Enter Trip Name" class="trip-input">
 						<br>
 
@@ -112,9 +108,8 @@
 			$(this).addClass("selected");
 			var typeOfTransportation = $(this)[0].id;
 			$("#transportation").val(typeOfTransportation)
-
-			var str = "#T" + typeOfTransportation;
-			$(str).prop('checked',true);
+			var transID = "#T" + typeOfTransportation;
+			$(transID).prop('checked',true);
 		})
 		
 		// $("form#create-trip").submit(function(){
