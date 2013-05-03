@@ -76,7 +76,7 @@
 		<div class="container-fluid">
 		  <div class="row-fluid">
 
-		    <div class="span6" id="home-dash">
+		    <div class="span7" id="home-dash">
 				<div id="user-pic">
 					<div id="user-pic-inner"></div>
 					<div id="users_name">Meghna Ragunathan</div>
@@ -99,10 +99,23 @@
 							<div class="icon-shop"></div>	
 						</div>
 						<div class="span10 home-dash-item-data">
-							Let's go to the mall
+							<!-- Let's go to the mall
 							<div class="home-dash-item-response">
 								Too Expensive!
-							</div>
+							</div> -->
+							
+							<div id="chatroom" ><ul></ul></div>
+							<form name="myform" action="javascript:message()">
+								<!-- <div class="row"> -->
+									<input id="message-input"  name="Message" type="text" placeholder="Type message...."/> 
+									<input id="submitButton" name="Submit"  type="submit" value="Send"/>
+								</form>
+							
+							
+							
+							<!-- . -->
+							
+							
 						</div>
 					</div>
 				</div>
@@ -142,14 +155,21 @@
 		
 		
 		
-		    <div class="span5" id="notif">
+		    <div class="span4" id="notif" style="margin-left:0; margin-right:0;  position:absolute; right:0; height: 100%;">
 				<div id="travel-feed-title">Travel Feed</div>
+				
 				<div class="travel-feed-notification">
 					<div class="travel-feed-notification-details">Jack invited you to Chicago </div>
 					<div class="travel-feed-add"><p>Add</p></div>
 					<div class="travel-feed-decline"><p>Decline</p></div>
-					
 				</div>
+				
+				<div class="travel-feed-notification">
+					<div class="travel-feed-notification-details">Jack invited you to Chicago. Jack invited you to Chicago. Jack invited you to Chicago. </div>
+					<div class="travel-feed-add"><p>Add</p></div>
+					<div class="travel-feed-decline"><p>Decline</p></div>
+				</div>
+				
 		    </div>
 		
 		  </div>

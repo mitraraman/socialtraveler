@@ -46,13 +46,15 @@ a {
 
 /* Main Styles
 *******************************************************************************/
-html {	
+html {
+	height: 100%;
 }
 
 body {
 	background-color: #fef6dd;	
 	background: url(../img/bg.gif);
 	margin-bottom:50px;
+	height: 100%;
 }
 
 
@@ -250,7 +252,7 @@ h3 {
 	text-align: left;
 	border-left: 6px solid #c1c1c1;
 	margin-top: 16em;
-	margin-left: 5em;
+	margin-left: 7em;
 	font-size: 1em;
 
 }
@@ -325,6 +327,254 @@ h3 {
 	vertical-align: baseline;
 	line-height: 80px;
 }
+
+
+
+
+/* Homepage-Dashboard Updated
+*******************************************************************************/
+#user-pic {
+	width: 10em;
+	height: 10em;
+	border-radius: 150px;
+	background-color: gray;
+	border: 5px solid #c1c1c1;
+	background: transparent;
+	position: relative;
+	margin-top: -17em;
+	margin-left: -7.4em;
+}
+
+#user-pic-inner {
+	width: 7.2em;
+	height: 7.2em;
+	border-radius: 100px;
+	background-color: white;
+	border: 5px solid #c1c1c1;
+	background-image: url(../img/fb-profilepic.jpg);
+	background-size: 120% 102%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin:auto;
+	margin-top:10%;
+}
+
+#users_name{
+	font-size: 2.4em;
+	position:absolute;
+	left: 120%;
+	top: 40%;
+	min-width: 420px;
+	color: #c54232;
+	font-family: ArcherPro-Medium;	
+}
+
+.home-dash-item {
+	margin-top:3em;
+	background-color: #c54232;
+	margin-bottom: 7em;
+}
+
+.open {
+	width: 50px;
+	height: 50px;
+	background-color: #c1c1c1;
+	border-radius: 50px;
+	position: absolute;
+	left: -2em;
+}
+
+.home-dash-item-header {
+	font-family: ArcherPro-Medium;
+	font-size: 1.2em;
+	padding: .5em;
+	color: #fff;
+	line-height: 1.2;
+	padding-left: 6em;
+	
+}
+
+.home-dash-item-location {
+	font-family: ArcherPro-Hairline;
+}
+
+.home-dash-item-date {
+	font-family: ArcherPro-Hairline;
+	position: absolute;
+	right:2em;	
+}
+
+.icon-question{
+	width: 100%;
+	height: 60px;
+	background-color: #c54232;
+	background-position: center;
+	background-size: 50%;
+	background-image: url(../img/questionmark.png);
+	background-position: center;
+	background-size: 50%;
+	
+	
+}
+
+.icon-food{
+	width: 100%;
+	height: 60px;
+	background-color: #c54232;
+	background-position: center;
+	background-size: 50%;
+	background-image: url(../img/forks.png);
+}
+
+.icon-car{
+	width: 100%;
+	height: 60px;
+	background-color: #c54232;
+	background-position: center;
+	background-size: 50%;
+	background-image: url(../img/camera.png);
+}
+
+.icon-shop{
+	width: 100%;
+	height: 60px;
+	background-color: #c54232;
+	background-position: center;
+	background-size: 50%;
+	background-image: url(../img/plus.png);
+}
+
+.home-dash-item-data {
+	height: 252px;
+	background-color: #fff;
+	border-right: 5px solid #c1c1c1;
+	border-bottom: 5px solid #c1c1c1;
+	border-radius: 5px;
+	font-size: 1.2em;
+	line-height: 1.5;
+	font-family: ArcherPro-Medium;
+}
+
+.home-dash-item-response {
+	background-color: #c1c1c1;
+	color: #fff;
+}
+
+
+
+
+
+
+/* Travel Feed */
+#travel-feed-title {
+	background-color: #c54232;
+	padding: 7%;
+	font-size: 2em;
+	font-family: ArcherPro-Light;
+	border-radius: 20px;
+/*	height:100px;*/
+	margin-top: 5em;
+	color: #fff;
+	margin-left: .7em;
+}
+
+.travel-feed-arrow {
+	width: 60px;
+	height: 60px;
+	background-color: #c54232;
+	background-image: url(../img/plus.png);
+}
+
+.travel-feed-notification {
+	background-color: #fff;
+	font-family: ArcherPro-Medium;
+	border-radius: 20px;
+	color: #c54232;
+/*	height: 100px;*/
+	padding-bottom: 1em;
+	margin-left: 1.7em;
+	
+	
+}
+
+.travel-feed-notification-details {
+	color: #c54232;
+	margin-top: 3em;
+	font-size: 1em;
+	padding: 5px;
+	
+}
+
+
+.travel-feed-add {
+	width: 15px;
+	height: 15px;
+/*	background-color: #c54232;*/
+	background-image: url(../img/add.png);
+	color: #c54232;
+	font-size: .7em;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 20px;
+	opacity: .7;
+}
+
+.travel-feed-add:hover {
+	opacity: 1;
+}
+
+.travel-feed-add p {
+	font-size: 1.2em;
+	position: relative;
+	left: 150%;
+	top: 0;
+}
+
+.travel-feed-decline {
+		width: 15px;
+		height: 15px;
+	/*	background-color: #c54232;*/
+		background-image: url(../img/decline.png);
+		color: #c54232;
+		font-size: .7em;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: 20px;
+		opacity: .7;
+	
+}
+
+.travel-feed-decline:hover {
+	opacity: 1;
+}
+
+
+.travel-feed-decline p {
+	font-size: 1.2em;
+	position: relative;
+	left: 170%;
+	top: 0;
+}
+
+
+.row .home-dash-item {
+	margin-left: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Create trip
 *************************************************/
@@ -666,211 +916,5 @@ td{
 
 
 
-
-
-
-/* new dash styles */
-#user-pic {
-	width: 200px;
-	height: 200px;
-	border-radius: 150px;
-	background-color: gray;
-	border: 10px solid #c1c1c1;
-	background: transparent;
-	
-	position: relative;
-	margin-top: -17em;
-	margin-left: -10em;
-}
-
-#user-pic-inner {
-	width: 150px;
-	height: 150px;
-	border-radius: 100px;
-	background-color: white;
-	border: 5px solid #c1c1c1;
-	background-image: url(../img/fb-profilepic.jpg);
-	background-size: 100% 100%;
-	margin:auto;
-	margin-top:10%;
-}
-
-#users_name{
-	font-size: 3em;
-	position:absolute;
-	left: 120%;
-	top: 40%;
-	min-width: 400px;
-	color: #c54232;
-	font-family: ArcherPro-Medium;
-}
-.home-dash-item {
-	margin-top:3em;
-	background-color: #c54232;
-	margin-bottom: 7em;
-}
-
-.open {
-	width: 50px;
-	height: 50px;
-	background-color: #c1c1c1;
-	border-radius: 50px;
-	position: absolute;
-	left: -2em;
-}
-
-.home-dash-item-header {
-	font-family: ArcherPro-Medium;
-	font-size: 2em;
-	padding: .5em;
-	color: #fff;
-	line-height: 1.2;
-}
-
-.home-dash-item-location {
-	font-family: ArcherPro-Hairline;
-	font-size: .8em;
-}
-
-.home-dash-item-date {
-	font-family: ArcherPro-Hairline;
-	position: absolute;
-	right:2em;
-	font-size: .8em;
-	
-}
-
-.icon-question{
-	width: 100%;
-	height: 100px;
-	background-color: #c54232;
-	background-image: url(../img/questionmark.png);
-}
-
-.icon-food{
-	width: 100%;
-	height: 100px;
-	background-color: #c54232;
-	background-image: url(../img/forks.png);
-}
-
-.icon-car{
-	width: 100%;
-	height: 100px;
-	background-color: #c54232;
-	background-image: url(../img/camera.png);
-}
-
-.icon-shop{
-	width: 100%;
-	height: 100px;
-	background-color: #c54232;
-	background-image: url(../img/plus.png);
-}
-
-.home-dash-item-data {
-	height: 408px;
-	background-color: #fff;
-	border-right: 8px solid #c1c1c1;
-	border-bottom: 8px solid #c1c1c1;
-	border-radius: 8px;
-	font-size: 1.5em;
-	line-height: 1.3;
-	font-family: ArcherPro-Medium;
-}
-
-.home-dash-item-response {
-	background-color: #c1c1c1;
-	color: #fff;
-}
-
-
-
-
-
-
-/* Travel Feed */
-#travel-feed-title {
-	background-color: #c54232;
-	padding: 8%;
-	font-size: 3em;
-	font-family: ArcherPro-Light;
-	border-radius: 20px;
-/*	height:100px;*/
-	margin-top: 3em;
-	color: #fff;
-}
-
-.travel-feed-arrow {
-	width: 60px;
-	height: 60px;
-	background-color: #c54232;
-	background-image: url(../img/plus.png);
-}
-
-.travel-feed-notification {
-	background-color: #fff;
-	font-family: ArcherPro-Medium;
-	border-radius: 20px;
-	color: #c54232;
-/*	height: 100px;*/
-	padding-bottom: 15px;
-	
-}
-
-.travel-feed-notification-details {
-	color: #c54232;
-	margin-top: 3em;
-	font-size: 1.6em;
-	padding: 5px;
-	
-	
-	
-}
-
-.travel-feed-add {
-	width: 20px;
-	height: 20px;
-/*	background-color: #c54232;*/
-	background-image: url(../img/add.png);
-	color: #c54232;
-	font-size: 1.2em;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	margin: 20px;
-/*	opacity: .8;*/
-}
-
-.travel-feed-add p {
-	font-size: 1.2em;
-	position: relative;
-	left: 150%;
-	top: 10%;
-}
-
-.travel-feed-decline {
-	width: 20px;
-	height: 20px;
-/*	background-color: #c54232;*/
-	background-image: url(../img/decline.png);
-	color: #c54232;
-	font-size: 1.2em;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	margin: 20px;
-	
-}
-
-.travel-feed-decline p {
-	font-size: 1.2em;
-	position: relative;
-	left: 170%;
-	top: 10%;
-}
-
-
-.row .home-dash-item {
-	margin-left: 3em;
-}
 
 
