@@ -18,8 +18,64 @@
 	
 </head>
 
-
 <body>
+<script>
+Parse.initialize("BRih15D1JVSqGQG4ZqN7mC8xI1zdCaj19P7s1jN5", "qXPbI5HE86xRHRirKIoBclQknsBOPzXJLTmoovPX");
+</script>
+
+<script>
+  	window.fbAsyncInit = function() {
+	  	Parse.FacebookUtils.init({
+	  		appId: '172708956215256',
+	  		channelUrl: '//hidden-eyrie-6529.herokuapp.com/channel.html',
+		  	status: true,
+		  	cookie: true,
+		  	xfbml: true
+		});
+		
+		FB.getLoginStatus(function(response) {
+			if (response.status === 'connected') {
+				console.log("sup");
+				loadFriends();
+			} else {
+				FB.login(function(response) {
+					if (response.authResponse) {
+						loadFriends();
+					} else {
+						console.log("this is dumb");
+					}
+				});
+			}
+		});
+	};
+
+
+  	(function(d, s, id){
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) {return;}
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/en_US/all.js";
+  	fjs.parentNode.insertBefore(js, fjs);
+  	}(document, 'script', 'facebook-jssdk'));
+
+  	function loadFriends() {
+  		FB.api('/me/friends', function(response) {
+  			var divContainer = document.getElementById("friends-list");
+  			for (i = 0; i < response.data.length; i++) {
+  				var friendDiv = document.createElement("div");
+  				friendDiv.className = "friend";
+  				var element = document.createElement("div");
+  				var imgElement = document.createElement("img");
+  				imgElement.src = "https://graph.facebook.com/"+response.data[i].id+"/picture?type=square";
+  				element.innerHTML = response.data[i].name;
+  				friendDiv.appendChild(imgElement);
+  				friendDiv.appendChild(element);
+  				divContainer.appendChild(friendDiv);
+  			}
+  		});
+  	}
+</script>
+
 	<!-- Navbar
     ================================================== -->
 <div class="navbar">
@@ -33,6 +89,20 @@
  	</ul>
  </div>
 
+<div id="wrapper">
+	<div class="page-wrapper">
+		<h3>Invite Your Friends!</h3>
+		<div id="friends-list">
+		</div>
+ 	</div>
+
+ 	<a href="./home.html">
+ 		<button>Invite Friends!</button>
+ 	</a>
+ 	<a href="./home.html">
+ 		<button>Skip This Step</button>
+ 	</a>
+</div>
      <!-- javascript
     ================================================== -->
 	<script src="../js/jquery-1.9.0.js"></script>
