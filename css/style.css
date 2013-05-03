@@ -453,12 +453,14 @@ input.new{
 }
 #save_settings{
 	margin-bottom:40px;
+	width:auto;
 }
 .ital{
 	font-style: italic;
 	font-size: .9em;
 }
 .settings button{
+	width:230px;
 	color:#c54232;
 	background-color: #fef6dd;
 	border: 2px solid #c54232;
