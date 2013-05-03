@@ -52,8 +52,8 @@ Final Files
 
 0. Navbar
 1. signup/login = index.html  - fo (DONE)
-	- format login and the logout in corner 
-	- move everything 
+	<!-- - format login and the logout in corner  -->
+	<!-- - move everything  -->
 2. new_dash.html -- homepage
 	- add Comments 
 	- add arrow to open and close

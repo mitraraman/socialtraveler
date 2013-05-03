@@ -64,15 +64,18 @@
 						<input type="radio" name="transportation" class="trans-mode" value="train">
 
 						<br>
-
-						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">
+						<input type="hidden" name="trip-mode" value="trip-mode" class="trip-input" id="trip-mode">
+						
+						
+					
+						<input type="text" placeholder="Enter Trip Name" class="trip-input">
 						<br>
 
 						<input type="date" name="start-date" value="start-date" class="trip-input">
 						<input type="date" name="end-date" value="end-date" class="trip-input" >
 						<br>
 
-						<input type="text" name="end-dest" value="end-dest" placeholder="End Destination" class="trip-input">
+						<input type="text" name="end-dest" placeholder="Enter Trip Destination" placeholder="End Destination" class="trip-input">
 						<br>
 
 						<!--invite friends box from FB-->
@@ -97,14 +100,20 @@
 	<script src="../js/script.js"></script>
 	
 	<script>
- 	$(document).ready(function() {
+	
+ 	$(document).ready(function() {		
 		$('#preview_method li').click(function() {
 			$(this).css('background-color', '#c54232')
 			$(this).css('color', '#fef6dd')
 			$(this).css('border', '2px solid #fef6dd')
 			$(this).siblings().css('background-color', '#fef6dd')
 			$(this).siblings().css('color', '#c54232')
+			$(this).addClass("selected");
+			var typeOfTransportation = $(this)[0].id;
+			$("#trip-mode")[0].value = typeOfTransportation
 		})
+		
+
 	});
 	</script>
 </body>	
