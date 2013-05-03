@@ -37,24 +37,30 @@
    ================================================== -->
 
 	<div class="page-wrapper create">
-		<div class="inner-content">
-		<h1>CREATE A TRIP</h1>
 		<div class="container-fluid">
-		  <div class="row-fluid">
-
-		  	<div class="span5">
+		  <div class="row-fluid firstfluid">
+		  	<div class="span9">
+		  		<div class="row-fluid">
+		  			<h1>CREATE A TRIP</h1>
+		  			<ul class="preview_method">
+						<li class="trans-mode" value="plane">plane</li>
+						<li class="trans-mode" value="bus">bus</li>
+						<li class="trans-mode" value="car">car</li>
+						<li class="trans-mode" value="train">train</li>
+					</ul>
+		  	<div class="span4 yes">
 		  		<h3 id="trip_name">TRIP NAME</h3>
 		  		<h3 id="trip_date">DATE</h3>
 		  		<h3 id="trip_dest">DESTINATION</h3>
 		  		<h3 id="trip_friends">INVITE FRIENDS</h3>
 		  	</div>
 
-		    <div class="span4" id="create-trip">
+		    <div class="span8" id="create-trip">
 					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
-						<input type="radio" name="transportation" class="trans-mode" value="plane">Plane
-						<input type="radio" name="transportation" class="trans-mode" value="bus">Bus
-						<input type="radio" name="transportation" class="trans-mode" value="car">Car
-						<input type="radio" name="transportation" class="trans-mode" value="train">train
+						<input type="radio" name="transportation" class="trans-mode" value="plane">
+						<input type="radio" name="transportation" class="trans-mode" value="bus">
+						<input type="radio" name="transportation" class="trans-mode" value="car">
+						<input type="radio" name="transportation" class="trans-mode" value="train">
 						<br>
 						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">
 						<br>
@@ -68,15 +74,16 @@
 
 						<!--invite friends box from FB-->
 						<br><br><br>
-						<input type="submit" value="Create Your Trip!">
-						<input type="button" value="Cancel">
+						<input type="submit" value="Create Your Trip!" class="but">
+						<input type="button" class="but" value="Cancel">
 
 					</form>
 					
 				</div>
+			</div>
+		</div>
 		    </div>
 		  </div>
-		</div>
 	</div>
     <!-- javascript
     ================================================== -->

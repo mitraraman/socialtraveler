@@ -57,7 +57,6 @@ body {
 
 
 .container-fluid {
-	width: 85%; 
 	margin: 0 auto;
 }
 
@@ -308,7 +307,6 @@ h3 {
 	width: 92%;
 	margin: 0 auto;
 	padding: 2em;
-	color: #fef6dd;
 }
 
 .inner-content h1{
@@ -364,37 +362,54 @@ h3 {
 
 /* Create trip
 *************************************************/
-.create .span5{
-	text-align: right;
-}
-.create .row-fluid{
+.create .row-fluid.firstfluid .span9{
+	padding-top:40px;
+	background-color: #c54232;
+	color: #fef6dd;
 	margin: auto;
+	float:none;
+}
+.create .preview_method{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.create .span4{
+	text-align: right;
 }
 #create-trip{
 	text-align: left;
 	margin:auto;
+	padding-left: 19px;
 }
-.span5 #trip_name{
-	margin-top: 59px;
-	padding-right: 15px;
+.span4 #trip_name{
+	margin-top: 55px;
 }
-.span5 #trip_date{
-	margin-top: 66px;
-	padding-right: 15px;
+.span4 #trip_date{
+	margin-top: 70px;
 }
-.span5 #trip_dest{
+.span4 #trip_dest{
 	margin-top: 71px;
-	padding-right: 15px;
 }
-.span5 #trip_friends{
+.span4 #trip_friends{
 	margin-top:60px;
-	padding-right: 15px;
 }
 input.trip-input{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-
+#create-trip .trans-mode{
+	display:none;
+}
+.create .span8{
+	padding-bottom: 25px;
+}
+.create .but{
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
+}
 
 /* Settings
 *******************************************************************************/
