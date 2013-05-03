@@ -37,34 +37,44 @@
 <!-- Content
    ================================================== -->
 
-	<div class="page-wrapper">
+	<div class="page-wrapper create">
+		<div class="inner-content">
+		<h1>CREATE A TRIP</h1>
 		<div class="container-fluid">
 		  <div class="row-fluid">
 
-		    <div class="span9" id="create-trip">
-				<div class="inner-content">
-					<h1>CREATE A TRIP</h1>
-					<br /><br />
+		  	<div class="span5">
+		  		<h3 id="trip_name">TRIP NAME</h3>
+		  		<h3 id="trip_date">DATE</h3>
+		  		<h3 id="trip_dest">DESTINATION</h3>
+		  		<h3 id="trip_friends">INVITE FRIENDS</h3>
+		  	</div>
+
+		    <div class="span4" id="create-trip">
 					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
-						<input type="radio" name="transportation" class="trans-mode" value="plane" id="radio-button-plane">Plane
-						<input type="radio" name="transportation" class="trans-mode" value="bus" id="radio-button-bus">Bus
-						<input type="radio" name="transportation" class="trans-mode" value="car" id="radio-button-car">Car
-						<input type="radio" name="transportation" class="trans-mode" value="train" id="radio-button-train">train
 
 						<h3>TRIP NAME</h3><br />
-						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">
 
-						<h3>DATE</h3><br />
+						<input type="radio" name="transportation" class="trans-mode" value="plane">Plane
+						<input type="radio" name="transportation" class="trans-mode" value="bus">Bus
+						<input type="radio" name="transportation" class="trans-mode" value="car">Car
+						<input type="radio" name="transportation" class="trans-mode" value="train">train
+						<br>
+
+						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">
+						<br>
+
 						<input type="date" name="start-date" value="start-date" class="trip-input">
 						<input type="date" name="end-date" value="end-date" class="trip-input" >
+						<br>
 
-						<h3>DESTINATION</h3><br />
-						<input type="text" name="end-dest" placeholder="End Destination" class="trip-input">
+						<input type="text" name="end-dest" value="end-dest" placeholder="End Destination" class="trip-input">
+						<br>
 
-						<h3>INVITE FRIENDS</h3><br />
 						<!--invite friends box from FB-->
-
+						<br><br><br>
 						<input type="submit" value="Create Your Trip!">
+						<input type="button" value="Cancel">
 
 					</form>
 					
