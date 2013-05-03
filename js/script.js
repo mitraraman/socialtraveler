@@ -17,7 +17,7 @@ function getParam( name ){
 function message(){
   var user = "none";
 
-  var message =": <br>" + $("#message-input").val();
+  var message = "> " + $("#message-input").val();
   // addMessage(message,user);
   messages.push({message:message, user: user, date: new Date()});
   $("#message-input").val("");
@@ -90,3 +90,5 @@ $(".open").click(function(){
 	}
 
 });
+
+

@@ -369,11 +369,19 @@ h3 {
 	font-family: ArcherPro-Medium;	
 }
 
+.home-dash-item:first-child {
+	margin-top: 3em;
+	background-color: #c54232;
+	margin-bottom: 7em;
+/*	color:purple;*/
+}
 .home-dash-item {
-	margin-top:3em;
+	margin-top:0em;
 	background-color: #c54232;
 	margin-bottom: 7em;
 }
+
+
 
 .open {
 	width: 50px;
@@ -594,10 +602,36 @@ h3 {
 	margin-left: 3em;
 }
 
+.home-dash-item-data {
+	position:relative;
+}
 
+#chatroom {
+	max-height:200px;
+	overflow-y: scroll;
+}
+#chatroom li{ 
+	list-style: none;
+}
 
+/*#chatroom:nth-child(even);{ 
+	background-color: #c1c1c1;
+	color: #fff;
+}*/
 
+#message-input {
+	position: absolute;
+	bottom: 0;
+	width: 80%;
+}
 
+#submitButton {
+	position: absolute;
+	bottom: .7em;
+	right:.5em;
+	background-color: #c1c1c1;	
+	color: #fff;
+}
 
 
 
