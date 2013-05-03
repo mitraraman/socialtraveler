@@ -651,7 +651,22 @@ textarea{
 .trip-preview{
 	text-align: center;
 	margin:auto;
+	font-family: ArcherPro-Light;
+	font-size: 18px;
 }
+
+h1.trip-preview{
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#trip-preview-content{
+	border: 3px solid #fef6dd;
+	margin: 0 auto;
+	text-align: center;
+}
+
 td{
 	height: 60px;
 	vertical-align: top;
@@ -667,13 +682,23 @@ td{
 .sec{
 	width:30px;
 }
+
+#preview-trip{
+	background-color: #c54232;
+	padding: 30px;
+	margin: 0 auto;
+	padding-right: 45px;
+}
+
 #preview-trip button{
 	width:100px;
 	color:#c54232;
 	background-color: #fef6dd;
 	border: 2px solid #c54232;
 	font-family: ArcherPro-Light;
-
+	padding: 3px;
+	padding-top: 6px;
+	margin-right: 10px;
 }
 .lastrow{
 	margin-top:150px;
