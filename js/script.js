@@ -78,12 +78,15 @@ $(".open").click(function(){
 	var info = $(this)
 	var tripItem = $(info.parent());
 	var tripData = $(tripItem.children()[2]);
+	info.html("<p> expand</p>");
 			
 	if (tripData.is( ":visible" )){
 		tripData.slideUp();
+		info.addClass("arrowUp");
 	}
 	else {
-		tripData.slideDown();	
+		tripData.slideDown();
+		info.removeClass("arrowUp");	
 	}
 
 });

@@ -382,7 +382,40 @@ h3 {
 	border-radius: 50px;
 	position: absolute;
 	left: -2em;
+	background-image: url(../img/play.png); 
+	background-position: center;
+	background-repeat: no-repeat;	
 }
+
+.open p {
+	font-family: ArcherPro-Light;
+	color:transparent;
+	margin-top: 1em;
+}
+
+.open:hover {
+	background-image: none;
+}
+
+.open:hover p {
+	font-family: ArcherPro-Light;
+	color:white;
+}
+
+.arrowUp {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+	color:transparent;
+	
+}
+
+.arrowUp p {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	transform: rotate(-180deg);	
+}
+
 
 .home-dash-item-header {
 	font-family: ArcherPro-Medium;
