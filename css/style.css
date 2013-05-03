@@ -57,7 +57,6 @@ body {
 
 
 .container-fluid {
-	width: 85%; 
 	margin: 0 auto;
 }
 
@@ -83,7 +82,9 @@ h3 {
 	font-family: ArcherPro-Bold;
 	font-size: 16px;	
 }
-
+.row-fluid div.span9{
+	float:none;
+}
 
 
 /* Navigation
@@ -265,7 +266,6 @@ h3 {
 	width: 92%;
 	margin: 0 auto;
 	padding: 2em;
-	color: #fef6dd;
 }
 
 .inner-content h1{
@@ -321,37 +321,61 @@ h3 {
 
 /* Create trip
 *************************************************/
-.create .span5{
-	text-align: right;
+.create .row-fluid.firstfluid .span9{
+	padding:30px;
+	background-color: #c54232;
+	color: #fef6dd;
+	margin: 0 auto;
+	float:none;
 }
-.create .row-fluid{
+
+.row-fluid.firstfluid .row-fluid{
+	border: 3px solid #fef6dd;
 	margin: auto;
+	width:92%;
+	padding: 2em;
+}
+.create .preview_method{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.create .span4{
+	text-align: right;
 }
 #create-trip{
 	text-align: left;
 	margin:auto;
+	padding-left: 19px;
 }
-.span5 #trip_name{
-	margin-top: 59px;
-	padding-right: 15px;
+.span4 #trip_name{
+	margin-top: 55px;
 }
-.span5 #trip_date{
-	margin-top: 66px;
-	padding-right: 15px;
+.span4 #trip_date{
+	margin-top: 70px;
 }
-.span5 #trip_dest{
+.span4 #trip_dest{
 	margin-top: 71px;
-	padding-right: 15px;
 }
-.span5 #trip_friends{
+.span4 #trip_friends{
 	margin-top:60px;
-	padding-right: 15px;
 }
 input.trip-input{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-
+#create-trip .trans-mode{
+	display:none;
+}
+.create .span8{
+	padding-bottom: 25px;
+}
+.create .but{
+	color:#c54232;
+	background-color: #fef6dd;
+	border: 2px solid #c54232;
+	font-family: ArcherPro-Light;
+}
 
 /* Settings
 *******************************************************************************/
@@ -560,7 +584,22 @@ textarea{
 .trip-preview{
 	text-align: center;
 	margin:auto;
+	font-family: ArcherPro-Light;
+	font-size: 18px;
 }
+
+h1.trip-preview{
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#trip-preview-content{
+	border: 3px solid #fef6dd;
+	margin: 0 auto;
+	text-align: center;
+}
+
 td{
 	height: 60px;
 	vertical-align: top;
@@ -576,13 +615,23 @@ td{
 .sec{
 	width:30px;
 }
+
+#preview-trip{
+	background-color: #c54232;
+	padding: 30px;
+	margin: 0 auto;
+	color:#fef6dd;
+}
+
 #preview-trip button{
 	width:100px;
 	color:#c54232;
 	background-color: #fef6dd;
 	border: 2px solid #c54232;
 	font-family: ArcherPro-Light;
-
+	padding: 3px;
+	padding-top: 6px;
+	margin-right: 10px;
 }
 .lastrow{
 	margin-top:150px;
