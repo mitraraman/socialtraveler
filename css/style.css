@@ -342,7 +342,7 @@ h3 {
 	width:92%;
 	padding: 2em;
 }
-.create .preview_method{
+.create #preview_method{
 	padding-top: 15px;
 	padding-bottom: 5px;
 	margin-bottom: 5px;
@@ -374,6 +374,7 @@ input.trip-input{
 #create-trip .trans-mode{
 	display:none;
 }
+
 .create .span8{
 	padding-bottom: 25px;
 }
@@ -579,10 +580,10 @@ textarea{
 
 /*Trip Preview
 *******************************************************************************/
-.preview_method{
+#preview_method{
 	padding-bottom: 15px;
 }
-.preview_method li{
+#preview_method li{
 	display:inline-block;
 	width:80px;
 	height:80px;
@@ -591,6 +592,12 @@ textarea{
 	color:#c54232;
 	margin-right: 10px;
 	line-height: 80px;
+}
+
+#preview_method li.trans-mode-select{
+	border: 2px solid #fef6dd;
+	background: #c54232;
+	color:#fef6dd;
 }
 
 .trip-preview{

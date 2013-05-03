@@ -15,8 +15,6 @@
 	<link href="../css/style.css" rel="stylesheet">
 
 	<script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
-
-	
 </head>
 
 
@@ -44,7 +42,7 @@
 		  	<div class="span9" id="create-tripp">
 		  		<div class="row-fluid">
 		  			<h1>CREATE A TRIP</h1>
-		  			<ul class="preview_method">
+		  			<ul id="preview_method">
 						<li class="trans-mode" value="plane" id="plane">plane</li>
 						<li class="trans-mode" value="bus" id="bus">bus</li>
 						<li class="trans-mode" value="car" id="car">car</li>
@@ -100,11 +98,13 @@
 	
 	<script>
  	$(document).ready(function() {
-		// $("#create-trip").html("sk");
-		// $('#create-trip input:radio').addClass('input_hidden');
-		// $('#create-trip .quarter').click(function() {
-		//     $('.quarter').addClass('quarterselected').siblings().removeClass('halfselected fullselected multiselected');
-		// });
+		$('#preview_method li').click(function() {
+			$(this).css('background-color', '#c54232')
+			$(this).css('color', '#fef6dd')
+			$(this).css('border', '2px solid #fef6dd')
+			$(this).siblings().css('background-color', '#fef6dd')
+			$(this).siblings().css('color', '#c54232')
+		})
 	});
 	</script>
 </body>	
