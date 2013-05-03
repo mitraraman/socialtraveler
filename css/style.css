@@ -387,6 +387,10 @@ input.trip-input{
 
 /* Settings
 *******************************************************************************/
+#settings_saved {
+	font-family: ArcherPro-Medium;
+	display: none;
+}
 
 #upload_prof {
 	background-color: #c5b69b;
@@ -868,3 +872,5 @@ td{
 .row .home-dash-item {
 	margin-left: 3em;
 }
+
+
