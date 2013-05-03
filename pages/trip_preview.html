@@ -44,25 +44,16 @@
 					<h1>Trip Preview</h1>
 					<br>
 					<ul class="preview_method">
-						<li>bus</li>
-						<li>plane</li>
-						<li>car</li>
-						<li>train</li>
+						<li class="trans-mode" value="bus">bus</li>
 					</ul>
 					<table class="trip-preview">
-						<tr><td class="first">Trip Name</td><td class="sec"></td><td>Spring Break</td></tr>
-						<tr><td class="first">Date</td><td class="sec"></td><td>4-3-13</td><td>4-5-13</td></tr>
-						<tr><td class="first">Destination</td><td class="sec"></td><td>Chicago</td></tr>
+						<tr><td class="first">Trip Name</td><td class="sec"></td><td class="trip-input" value="trip-name">Spring Break</td></tr>
+						<tr><td class="first">Date</td><td class="sec"></td><td class="trip-input" value="start-date">4-3-13</td><td class="trip-input" value="end-date">4-5-13</td></tr>
+						<tr><td class="first">Destination</td><td class="sec"></td><td class="trip-input" value="end-dest">Chicago</td></tr>
 						<tr><td class="first">Attending</td><td class="sec"></td><td><img src="../img/fbprofilepic-small.jpg" alt="profile pic" /></td><td><img src="../img/fbprofilepic-small.jpg" alt="profile pic" /></td></tr>
+						<tr class="lastrow"><td class="first"></td><td class="sec"></td><td><button type="submit" value="Done">Done</button></td><td><button type="button" value="Edit">Edit</button></td></tr>
 					</table>
 
-
-					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
-
-						<input type="submit" value="Done">
-						<input type="button" value="Edit">
-
-					</form>
 					
 				</div>
 		    </div>
