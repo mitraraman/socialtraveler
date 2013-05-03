@@ -162,7 +162,6 @@ h3 {
 *******************************************************************************/
 
 #main-menu-right #logout{
-	padding-right: 1em;
 	opacity: 0.7;
 }
 
@@ -174,6 +173,8 @@ h3 {
 	font-size: 1em;
 	font-style: italic;
 	font-weight: lighter;
+	padding-right: 1em;
+	
 }
 
 #logout-button:hover{
