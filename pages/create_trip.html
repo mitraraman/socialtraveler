@@ -58,13 +58,14 @@
 		    <div class="span8" id="create-trip">
 					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
 
-						<input type="radio" name="transportation" class="trans-mode" value="plane">
-						<input type="radio" name="transportation" class="trans-mode" value="bus">
-						<input type="radio" name="transportation" class="trans-mode" value="car">
-						<input type="radio" name="transportation" class="trans-mode" value="train">
+						<input type="radio" name="transportation" class="trans-mode" value="plane" id="Tplane">
+						<input type="radio" name="transportation" class="trans-mode" value="bus" id="Tbus">
+						<input type="radio" name="transportation" class="trans-mode" value="car" id="Tcar">
+						<input type="radio" name="transportation" class="trans-mode" value="train" id="Ttrain">
 
 						<br>
-						<input type="hidden" name="trip-mode" value="trip-mode" class="trip-input" id="trip-mode">
+						<div id="trans" style="display:none;">trans</div>
+						<!-- <input type="hidden" name="trip-mode" value="trip-mode" class="trip-input" id="trip-mode"> -->
 						
 						
 					
@@ -110,9 +111,17 @@
 			$(this).siblings().css('color', '#c54232')
 			$(this).addClass("selected");
 			var typeOfTransportation = $(this)[0].id;
-			$("#trip-mode")[0].value = typeOfTransportation
+			$("#transportation").val(typeOfTransportation)
+
+			var str = "#T" + typeOfTransportation;
+			$(str).prop('checked',true);
 		})
 		
+		// $("form#create-trip").submit(function(){
+		// 	var data = $('form#create-trip').serialize();
+		// 	console.log(data);
+		// 	return false;
+		// })
 
 	});
 	</script>

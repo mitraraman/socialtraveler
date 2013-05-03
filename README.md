@@ -63,8 +63,9 @@ Final Files
 	- style form 
 	- hidden field
 4.
-5.	
-6. 
-7.
+6. Settings
+	<!-- - feedback for submited info -->
+7. Invite Friends
+	- Style better and get information
 
 
