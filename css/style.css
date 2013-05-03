@@ -84,6 +84,7 @@ h3 {
 }
 .row-fluid div.span9{
 	float:none;
+	margin:auto;
 }
 
 
@@ -465,12 +466,17 @@ input.trip-input{
 	width:100px;
 }
 .settings{
-	background-color: #c54232;
 	color: #fef6dd;
-	width: 80%;
+}
+div.settings div.row-fluid div.span9{
+	background-color: #c54232;
+	padding: 30px;
 	margin: auto;
-	margin-bottom: 200px;
-	border: 10px solid #c54232;
+	color: #fef6dd;
+}
+.settings .inner-content{
+	border: 3px solid #fef6dd;
+	margin: 0 auto;
 }
 #settingswrap{
 	padding-top:20px;
@@ -489,7 +495,7 @@ input.new{
 	padding-right: 25px;
 }
 #save_settings{
-	margin-bottom:100px;
+	margin-bottom:40px;
 }
 .ital{
 	font-style: italic;
