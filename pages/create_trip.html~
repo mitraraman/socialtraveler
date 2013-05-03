@@ -58,12 +58,20 @@
 
 		    <div class="span8" id="create-trip">
 					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
-
+<<<<<<< HEAD
 						<input type="radio" name="transportation" class="trans-mode" value="plane">
 						<input type="radio" name="transportation" class="trans-mode" value="bus">
 						<input type="radio" name="transportation" class="trans-mode" value="car">
 						<input type="radio" name="transportation" class="trans-mode" value="train">
+=======
 
+						<h3>TRIP NAME</h3><br />
+
+						<input type="radio" name="transportation" class="trans-mode" value="plane">Plane
+						<input type="radio" name="transportation" class="trans-mode" value="bus">Bus
+						<input type="radio" name="transportation" class="trans-mode" value="car">Car
+						<input type="radio" name="transportation" class="trans-mode" value="train">train
+>>>>>>> 49810bc7ffff9f7b2f97cd5e99b2dd1d4824756f
 						<br>
 
 						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">

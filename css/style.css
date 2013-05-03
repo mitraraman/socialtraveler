@@ -245,22 +245,22 @@ h3 {
 }
 
 .button-wrap {
-	padding:5px;
 	background-color: #c54232;
 	margin:0 auto;
 	width: 220px;
-	margin-bottom: 10px;
 	font-family: ArcherPro-Light;
 	color:white;
+	margin-bottom: 10px;
+	padding: 5px;
 }
 
 .front-pg-buttons {
-/*	width:200px;*/
-/*	height:20px;*/
 	background-color: #c54232;
-	border: 2px solid #fef6dd;
 	margin-left: 0;
 	margin-right: 0;
+	color: white;
+	font-family: ArcherPro-Light;
+	border: 2px solid #fef6dd;
 }
 
 .front-pg-buttons:hover {
@@ -273,6 +273,13 @@ h3 {
 	background-color: #b9aa8e;
 }
 
+#login-button{
+	width: 215px;
+}
+
+#signup-button{
+	width: 215px;
+}
 
 /* 2- Home/Dashboard
 *******************************************************************************/
@@ -659,7 +666,22 @@ textarea{
 .trip-preview{
 	text-align: center;
 	margin:auto;
+	font-family: ArcherPro-Light;
+	font-size: 18px;
 }
+
+h1.trip-preview{
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#trip-preview-content{
+	border: 3px solid #fef6dd;
+	margin: 0 auto;
+	text-align: center;
+}
+
 td{
 	height: 60px;
 	vertical-align: top;
@@ -675,13 +697,23 @@ td{
 .sec{
 	width:30px;
 }
+
+#preview-trip{
+	background-color: #c54232;
+	padding: 30px;
+	margin: 0 auto;
+	padding-right: 45px;
+}
+
 #preview-trip button{
 	width:100px;
 	color:#c54232;
 	background-color: #fef6dd;
 	border: 2px solid #c54232;
 	font-family: ArcherPro-Light;
-
+	padding: 3px;
+	padding-top: 6px;
+	margin-right: 10px;
 }
 .lastrow{
 	margin-top:150px;
@@ -731,6 +763,7 @@ td{
 .home-dash-item {
 	margin-top:3em;
 	background-color: #c54232;
+	margin-bottom: 7em;
 }
 
 .open {
@@ -891,3 +924,7 @@ td{
 	top: 10%;
 }
 
+
+.row .home-dash-item {
+	margin-left: 3em;
+}
