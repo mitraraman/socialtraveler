@@ -447,7 +447,7 @@ div.settings div.row-fluid div.span9{
 	margin: auto;
 }
 input.cur{
-	padding-left: 25px;
+	padding-right: 25px;
 }
 input.new{
 	padding-right: 25px;
@@ -457,7 +457,7 @@ input.new{
 }
 .ital{
 	font-style: italic;
-	font-size:40%;
+	font-size:.4em;
 }
 .settings button{
 	color:#c54232;
