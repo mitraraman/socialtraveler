@@ -15,6 +15,62 @@
 	<link href="../css/style.css" rel="stylesheet">
 
 	<script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
+	<script>
+Parse.initialize("BRih15D1JVSqGQG4ZqN7mC8xI1zdCaj19P7s1jN5", "qXPbI5HE86xRHRirKIoBclQknsBOPzXJLTmoovPX");
+</script>
+
+<script>
+  	window.fbAsyncInit = function() {
+	  	Parse.FacebookUtils.init({
+	  		appId: '172708956215256',
+	  		channelUrl: '//hidden-eyrie-6529.herokuapp.com/channel.html',
+		  	status: true,
+		  	cookie: true,
+		  	xfbml: true
+		});
+		
+		FB.getLoginStatus(function(response) {
+			if (response.status === 'connected') {
+				console.log("sup");
+				loadFriends();
+			} else {
+				FB.login(function(response) {
+					if (response.authResponse) {
+						loadFriends();
+					} else {
+						console.log("this is dumb");
+					}
+				});
+			}
+		});
+	};
+
+
+  	(function(d, s, id){
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) {return;}
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/en_US/all.js";
+  	fjs.parentNode.insertBefore(js, fjs);
+  	}(document, 'script', 'facebook-jssdk'));
+
+  	function loadFriends() {
+  		FB.api('/me/friends', function(response) {
+  			var divContainer = document.getElementById("friends-list");
+  			for (i = 0; i < response.data.length; i++) {
+  				var friendDiv = document.createElement("div");
+  				friendDiv.className = "friend";
+  				var element = document.createElement("div");
+  				var imgElement = document.createElement("img");
+  				imgElement.src = "https://graph.facebook.com/"+response.data[i].id+"/picture?type=square";
+  				element.innerHTML = response.data[i].name;
+  				friendDiv.appendChild(imgElement);
+  				friendDiv.appendChild(element);
+  				divContainer.appendChild(friendDiv);
+  			}
+  		});
+  	}
+</script>
 </head>
 
 
@@ -79,7 +135,9 @@
 						<input type="text" name="end-dest" placeholder="Enter Trip Destination" placeholder="End Destination" class="trip-input">
 						<br>
 
-						<!--invite friends box from FB-->
+						<div id="friends-list">
+						</div>
+
 						<br><br><br>
 						<input type="submit" value="Create Your Trip!" class="but" onclick="createTrip()">
 						<input type="button" class="but" value="Cancel" onclick="javascript:window.location.replace('home_dashboard.html')" />
