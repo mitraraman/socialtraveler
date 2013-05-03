@@ -43,7 +43,21 @@ _copy from homework assignments_
 ## For Mitra
 Final Files 
 =========
-1. index.html
-2. new_dash.html
+0. Navbar
+1. signup/login = index.html  - fo (DONE)
+	- format login and the logout in corner 
+	- move everything 
+2. new_dash.html -- homepage
+	- add Comments 
+	- add arrow to open and close
+	- notification (does not close)
+	- need url for picture
 3. create_trip
+	- style form 
+	- hidden field
+4.
+5.	
+6. 
+7.
+
 

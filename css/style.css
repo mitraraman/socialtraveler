@@ -708,6 +708,7 @@ td{
 .home-dash-item {
 	margin-top:3em;
 	background-color: #c54232;
+	margin-bottom: 7em;
 }
 
 .open {
@@ -868,3 +869,7 @@ td{
 	top: 10%;
 }
 
+
+.row .home-dash-item {
+	margin-left: 3em;
+}

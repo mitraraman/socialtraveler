@@ -15,6 +15,7 @@
 	<link href="../css/style.css" rel="stylesheet">
 
 	<script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
+
 	
 </head>
 
@@ -45,10 +46,10 @@
 					<h1>CREATE A TRIP</h1>
 					<br /><br />
 					<form name="create-trip" action="createTrip()" method="get" id="create-trip">
-						<input type="radio" name="transportation" class="trans-mode" value="plane">Plane
-						<input type="radio" name="transportation" class="trans-mode" value="bus">Bus
-						<input type="radio" name="transportation" class="trans-mode" value="car">Car
-						<input type="radio" name="transportation" class="trans-mode" value="train">train
+						<input type="radio" name="transportation" class="trans-mode" value="plane" id="radio-button-plane">Plane
+						<input type="radio" name="transportation" class="trans-mode" value="bus" id="radio-button-bus">Bus
+						<input type="radio" name="transportation" class="trans-mode" value="car" id="radio-button-car">Car
+						<input type="radio" name="transportation" class="trans-mode" value="train" id="radio-button-train">train
 
 						<h3>TRIP NAME</h3><br />
 						<input type="text" value="trip-name" placeholder="Enter Trip Name" class="trip-input">
@@ -79,5 +80,15 @@
     <script src="../js/jquery.smooth-scroll.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 	<script src="../js/script.js"></script>
+	
+	<script>
+ 	$(document).ready(function() {
+		$("#create-trip").html("sk");
+		$('#create-trip input:radio').addClass('input_hidden');
+		// $('#create-trip .quarter').click(function() {
+		//     $('.quarter').addClass('quarterselected').siblings().removeClass('halfselected fullselected multiselected');
+		// });
+	});
+	</script>
 </body>	
  </html>
